@@ -1,0 +1,179 @@
+.sub-content {
+    padding: 300px 0;
+
+}
+
+.sub-title {
+    font-size: 74px;
+    color: #FFC959;
+}
+
+.sub-title-2 {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.para {
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+/* -------------------- */
+
+
+.simulation {
+    --sub-content-background: radial-gradient(circle farthest-corner at 50% 220%, rgba(255, 227, 90, 1) 0%, rgba(255, 201, 89, 1) 0%, rgba(43, 43, 42, 1) 72%);
+
+    background: var(--sub-content-background);
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin-top: 150px;
+    color: white;
+}
+
+.sim-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-bottom: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 220px;
+
+
+}
+
+.sim-content-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sim-content-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sim-input {
+    display: flex;
+    width: 600px;
+
+}
+
+.sim-input input {
+    height: 34px;
+    border-radius: 14pt;
+    background-color: #676461;
+    border: none;
+    margin-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    width: 130px;
+    text-align: center;
+    color: white;
+}
+
+.sim-input input[type=text]:focus {
+    outline: none;
+
+
+}
+
+.input-1 {
+    margin-right: 100px;
+
+}
+
+.p-input-1 {
+    width: 166px;
+    text-align: left;
+    padding-left: 120px;
+
+}
+
+.p-input-2 {
+    width: 310px;
+    text-align: left;
+}
+
+.p-sim {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* -------------------- */
+.stats {
+    --sub-content-background: radial-gradient(circle farthest-corner at 50% 220%, rgba(255, 227, 90, 1) 0%, rgba(255, 201, 89, 1) 0%, rgba(43, 43, 42, 1) 72%);
+
+    background: var(--sub-content-background);
+    padding-top: 50px;
+    padding-bottom: 200px;
+    color: white;
+}
+
+
+/* -------------------- */
+
+.use {
+    padding-top: 40px;
+}
+
+.users-logo {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.users-logo-picture {
+    height: 120px;
+    width: 120px;
+    background-color: grey;
+    border-radius: 10pt;
+    /* background-image: url('/src/assets/img/welleat-logo.png'); */
+    background-size: cover;
+}
+
+.users-testi {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-left: 260px;
+    padding-right: 260px;
+}
+
+.users-profil {
+    height: 300px;
+    width: 250px;
+    background-color: #676461;
+    border-radius: 10pt;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profil-picture {
+    height: 110px;
+    width: 110px;
+    background-color: #FFC959;
+    border-radius: 50%;
+    margin-top: 20px;
+
+
+}
+
+/* -------------------- */

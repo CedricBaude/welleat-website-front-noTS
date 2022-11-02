@@ -1,0 +1,37 @@
+.appli {
+    padding: 290px 0;
+    color: white;
+    display: flex;
+
+}
+
+.home-logo {
+    width: 270px;
+    height: 269px;
+}
+
+.appli-left-content {
+    width: 50%;
+    height: 100%;
+    margin-left: 70px;
+}
+
+.appli-right-content {
+
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -150px;
+    letter-spacing: 0.2px;
+    line-height: 1.25;
+}
+
+.fonter {
+    font-weight: 600;
+}
+
+.dot {
+    color: #FFC959;
+}
