@@ -2,7 +2,7 @@ import React from 'react';
 
 const Use = () => {
     return (
-        <section className='sub-content use'>
+        <section className='sub-content use' id='returns'>
             <h3 className='sub-title-2'>Ils utilisent Welleat<span className='dot'>.</span> </h3>
             <div className='users-logo'>
                 <div className="users-logo-picture"></div>

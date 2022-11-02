@@ -127,6 +127,7 @@
 
 .use {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .users-logo {
@@ -177,3 +178,56 @@
 }
 
 /* -------------------- */
+
+.contact {
+
+    --sub-content-background: radial-gradient(circle farthest-corner at 50% 220%, rgba(255, 227, 90, 1) 0%, rgba(255, 201, 89, 1) 0%, rgba(43, 43, 42, 1) 72%);
+
+    background: var(--sub-content-background);
+    padding-top: 50px;
+    padding-bottom: 200px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-form {
+    padding-left: 40%;
+}
+
+.form-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-contact-input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.form-contact-input input {
+    height: 34px;
+    border-radius: 14pt;
+    background-color: #676461;
+    border: none;
+    margin-top: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    width: 80%;
+    text-align: left;
+    color: white;
+}
+
+.form-contact-input label {
+    font-size: 18px;
+    padding-left: 26px;
+}

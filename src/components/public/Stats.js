@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
     return (
-        <section className='sub-content stats'>
+        <section className='sub-content stats' id='numbers'>
             <h3 className='sub-title-2'>Nos chiffres.</h3>
 
             <p>Augmentation de CA metier de bouche: 30%</p><br />

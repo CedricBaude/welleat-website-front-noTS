@@ -54,8 +54,8 @@ const Home = () => {
             <Efficient />
             <Sure />
             <Eco />
-            <Simulation />
             <Stats />
+            <Simulation />
             <Use />
             <Contact />
         </div>

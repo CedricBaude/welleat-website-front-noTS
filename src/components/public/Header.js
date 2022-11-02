@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
                 <ul>
                     {/* <li><HashLink smooth to="/home"></Link></li> */}
-                    <li><HashLink smooth to="/#appli" id='test'>L'application</HashLink></li>
+                    <li><HashLink smooth to="/#appli">L'application</HashLink></li>
                     <li><HashLink smooth to="/#numbers">Nos chiffres</HashLink></li>
                     <li><HashLink smooth to="/#simulator">Simulateur</HashLink></li>
                     <li><HashLink smooth to="/#returns">Retours clients</HashLink></li>
