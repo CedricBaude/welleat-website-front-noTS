@@ -286,6 +286,13 @@
     border-radius: 12pt;
 }
 
+.submit-button input:hover {
+    background-color: #FFC959;
+    color: #32302e;
+    cursor: pointer;
+
+}
+
 /* -------------------- */
 
 .footer {
