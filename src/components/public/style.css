@@ -193,6 +193,7 @@
 
 .contact-form {
     padding-left: 40%;
+    margin-top: 70px;
 }
 
 .form-contact {
@@ -283,4 +284,22 @@
     border: none;
     padding: 16px 28px;
     border-radius: 12pt;
+}
+
+/* -------------------- */
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.footer h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 26px;
+
 }
