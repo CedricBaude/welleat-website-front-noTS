@@ -188,7 +188,7 @@
     padding-bottom: 200px;
     color: white;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .contact-form {
@@ -200,6 +200,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.form-contact p {
+    width: 100%;
+    text-align: right;
+    padding-right: 90px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .form-contact-input {
@@ -227,7 +235,52 @@
     color: white;
 }
 
+.form-contact-textarea {
+    width: 100%;
+    padding-right: 10%;
+}
+
+.form-contact-textarea textarea {
+    width: 100%;
+    border-radius: 18pt;
+    background-color: #676461;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.form-contact-textarea label {
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding-left: 26px;
+}
+
 .form-contact-input label {
     font-size: 18px;
     padding-left: 26px;
+}
+
+.submit-button {
+    width: 100%;
+    text-align: right;
+    padding-right: 72px;
+    margin-top: 14px;
+}
+
+.submit-button input {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFC959;
+    background-color: #32302e;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 12pt;
 }

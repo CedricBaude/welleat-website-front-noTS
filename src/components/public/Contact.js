@@ -27,12 +27,17 @@ const Contact = () => {
                         <input type="text" name="society" id="society" />
                     </div>
                     <br />
-                    <label htmlFor="message">Message<span className='dot'>*</span></label>
-                    <br />
-                    <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+                    <div className="form-contact-textarea">
+                        <label htmlFor="message">Message<span className='dot'>*</span></label>
+                        <br />
+                        <textarea name="message" id="message" rows="10" ></textarea>
+                    </div>
                     <br />
                     <p><span className='dot'>*</span>obligatoire</p>
-                    <input type="submit" value="Envoyer" />
+                    <div className='submit-button'>
+                        <input type="submit" value="Envoyer" />
+                    </div>
+
                 </form>
             </div >
         </section >
