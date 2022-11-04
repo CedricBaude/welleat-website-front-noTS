@@ -1,6 +1,5 @@
 .sub-content {
     padding: 300px 0;
-
 }
 
 .sub-title {
@@ -30,7 +29,6 @@
     background: var(--sub-content-background);
     padding-top: 50px;
     padding-bottom: 200px;
-    margin-top: 150px;
     color: white;
 }
 
@@ -122,6 +120,34 @@
     color: white;
 }
 
+.stat-number-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.stat-number {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.stat-number-para {
+    color: white;
+    margin-top: -70px;
+    font-weight: 400;
+    font-size: 19px
+}
+
+.pourcent {
+    font-size: 90px;
+    color: #FFC959;
+    font-weight: 700;
+}
 
 /* -------------------- */
 
@@ -193,7 +219,7 @@
 
 .contact-form {
     padding-left: 40%;
-    margin-top: 70px;
+    margin-top: -60px;
 }
 
 .form-contact {
@@ -294,6 +320,36 @@
 }
 
 /* -------------------- */
+
+.story {
+    --sub-content-background: radial-gradient(circle farthest-corner at 50% 220%, rgba(255, 227, 90, 1) 0%, rgba(255, 201, 89, 1) 0%, rgba(43, 43, 42, 1) 72%);
+
+    background: var(--sub-content-background);
+}
+
+.story-content {
+    padding: 0 10%;
+}
+
+.story-content-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.story-content-1 {
+    background-color: #FFC959;
+    padding: 10px;
+}
+
+.story-content-2 {
+    background-color: #B3B3B3;
+    padding: 10px;
+}
+
+/* -------------------- */
+
 
 .footer {
     width: 100%;

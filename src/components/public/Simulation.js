@@ -4,7 +4,7 @@ import './style.css';
 const Simulation = () => {
     return (
         <section className='sub-content simulation' id="simulator">
-            <h3 className='sub-title-2'>Simulation de gains.</h3>
+            <h3 className='sub-title-2'>Simulation de gains<span className='dot'>.</span></h3>
             <div className='sim-content'>
                 <div className="sim-content-1">
                     <div className="sim-input">

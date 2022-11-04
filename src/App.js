@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Public/Home';
-import Dashboard from './pages/Admin/Dashboard';
-import Appli from './components/public/Appli';
+import PublicRouter from './pages/Public/PublicRouter';
+import AdminRouter from './pages/Admin/AdminRouter';
+import AuthRouter from './pages/Auth/AuthRouter';
+import AuthGuard from './_helpers/AuthGuard';
+
 
 
 function App() {
@@ -11,9 +13,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/dromadaire" element={<Dashboard />} />
-
+          <Route path="/*" element={<PublicRouter />} />
+          <Route path="/admin/*" element={
+            <AuthGuard>
+              <AdminRouter />
+            </AuthGuard>
+          } />
+          <Route path="/dromadaire" element={<AuthRouter />} />
         </Routes>
       </BrowserRouter>
 

@@ -4,7 +4,7 @@ import './style.css';
 const Contact = () => {
     return (
         <section className='sub-content contact' id="contact">
-            <h3 className='sub-title-2'>Nous contacter.</h3>
+            <h3 className='sub-title-2'>Nous contacter<span className='dot'>.</span></h3>
             <div className='contact-form'>
                 <form className='form-contact'>
                     <div className="form-contact-input">
