@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.AHeader {
+/* .AHeader {
     text-align: center;
     line-height: 50px;
     background-color: grey;
@@ -11,12 +11,12 @@
 .SideMenu {
     flex-grow: 1;
     border-right: solid 1px grey;
-}
+} */
 
-#admin-body {
+/* #admin-body {
     flex-grow: 6;
     padding-left: 15px;
-}
+} */
 
 /* ************************* */
 

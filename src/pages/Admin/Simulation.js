@@ -4,12 +4,12 @@ import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
 import './dashboard.css';
 
-const Dashboard = () => {
+const Simulation = () => {
     return (
         <div className='dashboard-content'>
             <Header />
             <div className="dashboard-sub-content">
-                <h2>Dashboard qui marche !</h2>
+                <h2>Simutation des gains</h2>
                 <br />
                 <br />
 
@@ -18,4 +18,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default Simulation;

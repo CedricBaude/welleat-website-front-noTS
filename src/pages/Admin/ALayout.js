@@ -7,11 +7,9 @@ import "./admin.css";
 const ALayout = () => {
     return (
         <div className='ALayout'>
-            <div id="admin">
-                <div id="admin-body">
-                    <Outlet />
-                </div>
-            </div>
+
+            <Outlet />
+
         </div>
     );
 };

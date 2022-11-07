@@ -2,9 +2,10 @@ import React from 'react';
 
 const Consumers = () => {
     return (
-        <div>
+        <section className='sub-content consumers' id="">
+            <h3>CONSOMMATEURS</h3>
 
-        </div>
+        </section>
     );
 };
 

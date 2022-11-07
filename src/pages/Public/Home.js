@@ -13,6 +13,8 @@ import Stats from '../../components/public/Stats';
 import Contact from '../../components/public/Contact';
 import Footer from '../../components/public/Footer';
 import Story from '../../components/public/Story';
+import Distribution from '../../components/public/Distribution';
+import Consumers from '../../components/public/Consumers';
 
 const Home = () => {
     // const handleScroll = (e: any) => {
@@ -61,6 +63,8 @@ const Home = () => {
             <Use />
             <Contact />
             <Story />
+            <Distribution />
+            <Consumers />
             <Footer />
         </div>
     );

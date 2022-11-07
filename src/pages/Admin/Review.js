@@ -4,18 +4,17 @@ import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
 import './dashboard.css';
 
-const Dashboard = () => {
+const Review = () => {
     return (
         <div className='dashboard-content'>
             <Header />
             <div className="dashboard-sub-content">
-                <h2>Dashboard qui marche !</h2>
+                <h2>Page des avis utilisateurs</h2>
                 <br />
                 <br />
-
             </div>
         </div>
     );
 };
 
-export default Dashboard;
+export default Review;
