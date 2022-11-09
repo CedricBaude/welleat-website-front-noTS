@@ -16,12 +16,12 @@ const Header = () => {
                     GD
                 </div>
                 <div className="user-name">
-                    GAUTHIER DECROIX <br />
-                    Manager
+                    GAUTIER DECROIX <br />
+                    <span className='ita'>Manager</span>
                 </div>
             </div>
             <nav>
-                <ul>
+                <ul className='user-desc-ul'>
                     <li><Link to="/admin/dashboard">DASHBOARD</Link></li>
                     <li><Link to="/admin/review">AVIS UTILISATEURS</Link></li>
                     <li><Link to="/admin/contact">CONTACT</Link></li>
@@ -29,7 +29,7 @@ const Header = () => {
                     <li><Link to="/admin/newsletter">NEWSLETTER</Link></li>
                 </ul>
             </nav>
-            <button onClick={logOut}>Logout</button>
+            <button className='logout' onClick={logOut}>DECONNEXION</button>
         </header>
     );
 };

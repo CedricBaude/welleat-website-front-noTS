@@ -4,9 +4,498 @@
     width: 100%;
 }
 
+/* ---------------------------- */
+
 .dashboard-content {
     display: flex;
     flex-direction: row;
     min-height: 1000px;
+    width: 100%;
+}
+
+.dashboard-sub-content {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+}
+
+.dashboard-sub-content-heading {
+    box-shadow: 5px 5px 10px gray;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.title-dashboard {
+    font-size: 34px;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.sub-title-dashboard {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    width: auto;
+}
+
+.separator-line {
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+}
+
+.dashboard-sub-content-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+/* ---------------------------- */
+
+.dashboard-square-data {
+    width: 236px;
+    height: auto;
+    margin: 32px;
+
+}
+
+.dashboard-square {
+    height: 168px;
+    width: 236px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    border-radius: 10pt;
+    text-align: center;
+    line-height: 158px;
+    font-size: 72px;
+    font-weight: 400;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.dashboard-square-data-desc {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* ---------------------------- */
+
+.review {
+    padding: 20px 50px;
+}
+
+.dashboard-review-add-button {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.add-review {
+    width: 150px;
+    height: 58px;
+    background-color: #FFC959;
+    color: black;
+    border: none;
+    border-radius: 4pt;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+
+.dashboard-review {
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 4pt;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard-review-desc-user {
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    align-items: center;
+    width: 30%;
+    padding-right: 10px;
+}
+
+/* ---------------------------- */
+
+.img-temp {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dashboard-review-desc-user-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    height: 50px;
+}
+
+.dashboard-review-desc-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 25%;
+
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-store {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+
+}
+
+.dashboard-review-desc-user-store-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+
+}
+
+.dashboard-review-desc-job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 30%;
+    overflow: hidden;
+}
+
+.dashboard-review-desc-user-job {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+
+}
+
+.dashboard-review-desc-user-job-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+/* ---------------------------- */
+
+.dashboard-review-desc-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: 15%;
+    overflow: hidden;
+}
+
+.dashboard-review-desc-user-detail-pin {
+    margin-right: 30px;
+    margin-top: 4px;
+}
+
+.dashboard-review-desc-user-detail {
+    height: 32px;
+    width: 88px;
+    margin-right: 20px;
+    background-color: #cecece;
+    border: none;
+    border-radius: 4pt;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.unread {
+    background-color: #FFC959;
+}
+
+/* ---------------------------- */
+
+.dashboard-review-desc-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 31%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-email {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+
+}
+
+.dashboard-review-desc-user-email-email {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-society {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 18%;
+    overflow: hidden;
+}
+
+.dashboard-review-desc-user-society {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-society-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 12%;
+    overflow: hidden;
+}
+
+.dashboard-review-desc-user-date {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-date-date {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dahsboard-contact {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.square-data-gray {
+    background-color: #D8D8D8;
+    line-height: 118px;
+    width: 266px;
+}
+
+.square-data-gray-number {}
+
+.square-data-gray-desc {
+    margin-top: -62px;
+    font-weight: 400;
+    font-size: 26px;
+    width: 266px;
+}
+
+/* ---------------------------- */
+/* .dashboard-simulation {
+    margin-top: 10px;
+    margin-bottom: 40px;
+} */
+
+.dashboard-simu {
+    padding-left: 40px;
+}
+
+.dashboard-review-desc-date-welleat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 12%;
+    overflow: hidden;
+}
+
+.dashboard-review-desc-user-date-welleat {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-date-date-welleat {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-ca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-ca {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-ca-content {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-ca-welleat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-ca-welleat {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-ca-content-welleat {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-margin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-margin {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-margin-content {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-margin-welleat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-margin-welleat {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-margin-welleat-content {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
+    width: 100%;
+}
+
+.dashboard-review-desc-profit-welleat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.dashboard-review-desc-user-profit-welleat {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+}
+
+.dashboard-review-desc-user-profit-welleat-content {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10px;
     width: 100%;
 }

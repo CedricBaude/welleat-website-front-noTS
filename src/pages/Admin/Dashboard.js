@@ -9,10 +9,61 @@ const Dashboard = () => {
         <div className='dashboard-content'>
             <Header />
             <div className="dashboard-sub-content">
-                <h2>Dashboard qui marche !</h2>
-                <br />
-                <br />
-
+                <div className="dashboard-sub-content-heading">
+                    <h2 className='title-dashboard'>Dashboard</h2>
+                    <h3 className='sub-title-dashboard' >SITE VITRINE</h3>
+                    {/* <div className="separator-line"></div> */}
+                </div>
+                <div className="dashboard-sub-content-content">
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">20111</div>
+                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">20111</div>
+                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">20111</div>
+                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square">332</div>
+                        <div className="dashboard-square-data-desc">...</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
