@@ -110,6 +110,14 @@
     font-weight: 600;
     line-height: 58px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.togglemodal {
+    display: block;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 8px 30px;
 }
 
 .dashboard-review {
@@ -211,8 +219,7 @@
     flex-direction: row;
     align-items: center;
     height: 50px;
-    width: 15%;
-    overflow: hidden;
+
 }
 
 .dashboard-review-desc-user-detail-pin {

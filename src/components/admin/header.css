@@ -58,7 +58,9 @@
 }
 
 .logout {
-    height: 30px;
-    width: 250px;
+    height: 34px;
+    width: 220px;
     border: none;
+    border-radius: 2pt;
+    cursor: pointer;
 }

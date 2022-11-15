@@ -6,9 +6,8 @@ let getAllUsers = () => {
 
 let getUser = (uid) => {
     return Axios.get('/users/' + uid)
-
 }
+
 export const userService = {
     getAllUsers, getUser
 }
-

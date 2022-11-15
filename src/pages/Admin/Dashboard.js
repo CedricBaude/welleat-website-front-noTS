@@ -3,28 +3,27 @@ import React from 'react';
 import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
 import './dashboard.css';
+import axios from "axios";
 
-import { useEffect, useRef, useState } from 'react';
 
-import { dataService } from '../../_services/data.service';
+const baseURL = "http://localhost:5000/data";
+
 
 const Dashboard = () => {
-    const [dataM, setDataM] = useState([])
-    const flag = useRef(false)
+    const [post, setPost] = React.useState(null);
 
-    useEffect(() => {
+    React.useEffect(() => {
+        axios.get(baseURL).then((response) => {
+            // console.log(response.data);
+            setPost(response.data);
+        });
+    }, []);
 
-        if (flag.current === false) {
-            dataService.getManageableData()
-                .then(res => {
-                    console.log(res.data)
-                    setDataM(res.data)
-                })
-                .catch(err => console.log(err))
-        }
-        return () => flag.current = true
+    if (!post) return null;
 
-    }, [])
+
+    // console.log(post.data[0].nom_manageable_data);
+    // console.log(post.data[0].valeur_manageable_data);
     return (
         <div className='dashboard-content'>
             <Header />
@@ -34,68 +33,25 @@ const Dashboard = () => {
                     <h3 className='sub-title-dashboard' >SITE VITRINE</h3>
                     {/* <div className="separator-line"></div> */}
                 </div>
-                <div>
-
-                    <div>
-                        {dataM.id}
-
-                    </div>
-
-                </div>
-
                 <div className="dashboard-sub-content-content">
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">20111</div>
-                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">20111</div>
-                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">20111</div>
-                        <div className="dashboard-square-data-desc">Nombre d'UX</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square">332</div>
-                        <div className="dashboard-square-data-desc">...</div>
-                    </div>
+
+
+                    {
+                        post.data.map(data => (
+                            <div className="dashboard-square-data">
+                                <div className="dashboard-square">{data.valeur_manageable_data}</div>
+                                <div className="dashboard-square-data-desc">{data.nom_manageable_data}</div>
+                            </div>
+                        ))
+
+                    }
+
                 </div>
+
             </div>
         </div>
-    );
-};
 
+    )
+
+}
 export default Dashboard;

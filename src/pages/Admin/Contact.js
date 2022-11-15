@@ -6,9 +6,55 @@ import './dashboard.css';
 import imgTemp from "../../assets/img/Img-temp.png";
 import callSelected from "../../assets/img/call-selected.png";
 import callUnSelected from "../../assets/img/call-unselected.png";
+import axios from "axios";
 
+
+const baseURL = "http://localhost:5000/mail/listmail";
+const baseURLlistRappel = "http://localhost:5000/mail/listrappel/true";
+const baseURLlistnexletter = "http://localhost:5000/mail/listnewsletter/true";
 
 const Contact = () => {
+    const [post, setPost] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURL).then((response) => {
+            // console.log(response.data);
+            setPost(response.data);
+        });
+    }, []);
+
+
+    const [listRappel, setRappel] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURLlistRappel).then((response) => {
+            // console.log(response.data);
+            setRappel(response.data);
+        });
+    }, []);
+
+
+    const [listnewletter, setlistnewletter] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURLlistnexletter).then((response) => {
+            // console.log(response.data);
+            setlistnewletter(response.data);
+        });
+    }, []);
+
+    if (!post) return null;
+
+
+    console.log(post);
+    console.log(listRappel);
+    console.log(listnewletter);
+    let nbreDEdemande = Number(post.data.length);
+    let nbreDemandeRappel = parseFloat((listRappel.message / nbreDEdemande) * 100).toFixed(2);
+    let nbreDemandeInscrit = parseFloat((listnewletter.message / nbreDEdemande) * 100).toFixed(2);
+    console.log(nbreDEdemande);
+    console.log(post.data[0].nom_manageable_data);
+    console.log(post.data[0].valeur_manageable_data);
     return (
         <div className='dashboard-content'>
             <Header />
@@ -20,22 +66,22 @@ const Contact = () => {
 
                 <div className="dashboard-sub-content-content dashboard-contact">
                     <div className="dashboard-square-data">
-                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>3223</span></div>
+                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>{nbreDEdemande}</span></div>
                         <div className="dashboard-square-data-desc square-data-gray-desc">Prises de contact</div>
                     </div>
 
                     <div className="dashboard-square-data">
-                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>1213</span></div>
+                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>{post.nbresociete}</span></div>
                         <div className="dashboard-square-data-desc square-data-gray-desc">Sociétés</div>
                     </div>
 
                     <div className="dashboard-square-data">
-                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>12%</span></div>
+                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'>{nbreDemandeRappel}%</span></div>
                         <div className="dashboard-square-data-desc square-data-gray-desc">Demandes de rappel</div>
                     </div>
 
                     <div className="dashboard-square-data">
-                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'></span>12%</div>
+                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'></span>{nbreDemandeInscrit}%</div>
                         <div className="dashboard-square-data-desc square-data-gray-desc">Inscrits à la newsletter</div>
                     </div>
                 </div>

@@ -33,6 +33,19 @@ const Contact = () => {
                         <textarea name="message" id="message" rows="10" ></textarea>
                     </div>
                     <br />
+                    <div>
+                        <div className="">
+                            <label htmlFor="text">Souhaitez-vous vous inscrire à la newsletter?</label>
+                            <input type="radio" name="newsletter" id="newsletter" value="oui" />Oui
+                            <input type="radio" name="newsletter" id="newsletter" value="non" />Non
+                        </div>
+
+                        <div className="form-contact-input">
+                            <label htmlFor="text">Souhaitez-vous être rappelé par téléphone?</label>
+                            <input type="text" name="rappel-oui" id="rappel-oui" />
+                            <input type="radio" name="rappel-non" id="rappel-non" value="non" />Non
+                        </div>
+                    </div>
                     <p><span className='dot'>*</span>obligatoire</p>
                     <div className='submit-button'>
                         <input type="submit" value="Envoyer" />
