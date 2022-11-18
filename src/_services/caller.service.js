@@ -2,7 +2,7 @@ import axios from "axios";
 import { accountService } from "./account.service";
 
 const Axios = axios.create({
-    baseURL: 'http://localhost:5000/users'
+    baseURL: 'https://testrender-6iwm.onrender.com/users'
 })
 
 /**
