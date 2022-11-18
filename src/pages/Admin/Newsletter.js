@@ -3,11 +3,25 @@ import React from 'react';
 import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
 import './dashboard.css';
-import imgTemp from "../../assets/img/Img-temp.png";
-import callSelected from "../../assets/img/call-selected.png";
-import callUnSelected from "../../assets/img/call-unselected.png";
+import axios from "axios";
+
+const baseURLlistnewsletter = "https://testrender-6iwm.onrender.com/newsletter";
 
 const Newsletter = () => {
+    const [listnewsletter, setlistnewsletter] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURLlistnewsletter).then((response) => {
+
+            setlistnewsletter(response.data);
+            console.log(response.data);
+        });
+    }, []);
+
+    if (!listnewsletter) return null;
+
+    let nbreDEdemande = Number(listnewsletter.data.length);
+
     return (
         <div className='dashboard-content'>
             <Header />
@@ -18,188 +32,27 @@ const Newsletter = () => {
                 </div>
 
                 <div className="dashboard-sub-content-content review">
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callUnSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail unread '>DETAILS</button>
-                        </div>
+                    <div className="dashboard-square-data">
+                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'></span>{nbreDEdemande}</div>
+                        <div className="dashboard-square-data-desc square-data-gray-desc">Inscrits à la newsletter</div>
                     </div>
 
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
+                    {
+                        listnewsletter.data.map(data => (
+                            <div className="dashboard-review" key={data.id}>
+                                <div className='dashboard-review-desc-user'>
+                                    <div className='dashboard-review-desc-user-name'>{data.prenom_newsletter}</div>
+                                </div>
+                                <div className='dashboard-review-desc-email'>
+                                    <div className='dashboard-review-desc-user-email-email'>{data.email_newsletter}</div>
+                                </div>
+                                <div className='dashboard-review-desc-date'>
+                                    <div className='dashboard-review-desc-user-date-date'>{data.createdAt}</div>
+                                </div>
                             </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
+                        ))
+                    }
 
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail unread'>DETAILS</button>
-                        </div>
-                    </div>
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callUnSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail unread'>DETAILS</button>
-                        </div>
-                    </div>
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callUnSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail'>DETAILS</button>
-                        </div>
-                    </div>
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail'>DETAILS</button>
-                        </div>
-                    </div>
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callUnSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail'>DETAILS</button>
-                        </div>
-                    </div>
-
-                    <div className="dashboard-review">
-                        <div className='dashboard-review-desc-user'>
-                            <div className='img-temp'>
-                                <img src={imgTemp} alt="" className='' />
-                            </div>
-                            <div className='dashboard-review-desc-user-name'>Jean Jean</div>
-                        </div>
-
-                        <div className='dashboard-review-desc-email'>
-                            <div className='dashboard-review-desc-user-email'>Email</div>
-                            <div className='dashboard-review-desc-user-email-email'>blablabla@gmail.com</div>
-                        </div>
-                        <div className='dashboard-review-desc-society'>
-                            <div className='dashboard-review-desc-user-society'>Société</div>
-                            <div className='dashboard-review-desc-user-society-name'>Welleat</div>
-                        </div>
-                        <div className='dashboard-review-desc-date'>
-                            <div className='dashboard-review-desc-user-date'>Date</div>
-                            <div className='dashboard-review-desc-user-date-date'>05/12/2022</div>
-                        </div>
-                        <div className='dashboard-review-desc-detail'>
-                            <div className='dashboard-review-desc-user-detail-pin'><img src={callSelected} alt="" className='' /></div>
-                            <button className='dashboard-review-desc-user-detail'>DETAILS</button>
-                        </div>
-                    </div>
 
 
 

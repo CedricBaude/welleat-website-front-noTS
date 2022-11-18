@@ -11,7 +11,7 @@ import axios from "axios";
 
 const baseURL = "https://testrender-6iwm.onrender.com/mail/listmail";
 const baseURLlistRappel = "https://testrender-6iwm.onrender.com/mail/listrappel/true";
-const baseURLlistnexletter = "https://testrender-6iwm.onrender.com/newsletter";
+
 
 const Contact = () => {
     const [post, setPost] = React.useState(null);
@@ -34,27 +34,14 @@ const Contact = () => {
     }, []);
 
 
-    const [listnewletter, setlistnewletter] = React.useState(null);
 
-    React.useEffect(() => {
-        axios.get(baseURLlistnexletter).then((response) => {
-            // console.log(response.data);
-            setlistnewletter(response.data);
-        });
-    }, []);
 
     if (!post) return null;
 
-
-    console.log(post);
-    console.log(listRappel);
-    console.log(listnewletter);
     let nbreDEdemande = Number(post.data.length);
     let nbreDemandeRappel = parseFloat((listRappel.message / nbreDEdemande) * 100).toFixed(2);
-    let nbreDemandeInscrit = parseFloat((listnewletter.message / nbreDEdemande) * 100).toFixed(2);
-    console.log(nbreDEdemande);
-    console.log(post.data[0].nom_manageable_data);
-    console.log(post.data[0].valeur_manageable_data);
+
+
     return (
         <div className='dashboard-content'>
             <Header />
@@ -80,10 +67,7 @@ const Contact = () => {
                         <div className="dashboard-square-data-desc square-data-gray-desc">Demandes de rappel</div>
                     </div>
 
-                    <div className="dashboard-square-data">
-                        <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'></span>{nbreDemandeInscrit}%</div>
-                        <div className="dashboard-square-data-desc square-data-gray-desc">Inscrits à la newsletter</div>
-                    </div>
+
                 </div>
 
                 <div className="dashboard-sub-content-content review">

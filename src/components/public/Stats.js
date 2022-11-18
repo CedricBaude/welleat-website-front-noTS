@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import axios from "axios";
-const baseURL = "http://https://testrender-6iwm.onrender.com/data";
+const baseURL = "https://testrender-6iwm.onrender.com/data";
 
 const Stats = () => {
     const [post, setPost] = React.useState(null);

@@ -43,7 +43,6 @@ const Dashboard = () => {
                                 <div className="dashboard-square-data-desc">{data.nom_manageable_data}</div>
                             </div>
                         ))
-
                     }
 
                 </div>

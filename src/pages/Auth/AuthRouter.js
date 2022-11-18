@@ -8,8 +8,8 @@ const AuthRouter = () => {
         <div>
             <Routes>
                 <Route index element={<Login />} />
-                <Route path="/dromadaire" element={<Login />} />
-                <Route path="/*" element={<Error />} />
+                <Route path="dromadaire" element={<Login />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </div>
     );
