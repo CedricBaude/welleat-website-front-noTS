@@ -6,8 +6,10 @@ import { Layout, Home } from "../../pages/Public"
 const PublicRouter = () => {
     return (
         <Routes>
-            <Route index element={<Home />} />
-            <Route path="*" element={<Error />} />
+            <Route element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="*" element={<Error />} />
+            </Route>
         </Routes>
     );
 };

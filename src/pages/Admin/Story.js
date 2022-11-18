@@ -4,7 +4,7 @@ import Header from '../../components/admin/Header';
 import axios from "axios";
 
 
-const baseURLStory = "http://localhost:5000/story";
+const baseURLStory = "https://testrender-6iwm.onrender.com/story";
 
 const Story = () => {
     const [story, setStory] = React.useState(null);

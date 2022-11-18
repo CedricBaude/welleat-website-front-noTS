@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import axios from "axios";
-const baseURL = "http://localhost:5000/data";
+const baseURL = "https://testrender-6iwm.onrender.com/data";
 
 const Simulation = () => {
     const [post, setPost] = React.useState(null);

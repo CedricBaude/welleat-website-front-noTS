@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 
-const baseURL = "http://localhost:5000/avis";
+const baseURL = "https://testrender-6iwm.onrender.com/avis";
 const Use = () => {
     const [post, setPost] = React.useState(null);
 

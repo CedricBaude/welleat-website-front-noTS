@@ -11,14 +11,16 @@ import Story from './Story';
 const AdminRouter = () => {
     return (
         <Routes>
-            <Route index element={<Dashboard />} />
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="review" element={<Review />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="simulation" element={<Simulation />} />
-            <Route path="newsletter" element={<Newsletter />} />
-            <Route path='story' element={<Story />} />
-            <Route path="*" element={<Error />} />
+            <Route element={<ALayout />} >
+                <Route index element={<Dashboard />} />
+                <Route path="dashboard" element={<Dashboard />} />
+                <Route path="review" element={<Review />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="simulation" element={<Simulation />} />
+                <Route path="newsletter" element={<Newsletter />} />
+                <Route path='story' element={<Story />} />
+                <Route path="*" element={<Error />} />
+            </Route>
         </Routes>
     );
 };

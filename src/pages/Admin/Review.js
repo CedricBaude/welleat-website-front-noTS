@@ -10,7 +10,7 @@ import stickyUnSelected from "../../assets/img/sticky-unselected.png";
 import axios from "axios";
 import ModalReview from '../../components/admin/ModalReview';
 
-const baseURL = "http://localhost:5000/avis";
+const baseURL = "https://testrender-6iwm.onrender.com/avis";
 
 const Review = () => {
     const [post, setPost] = React.useState(null);

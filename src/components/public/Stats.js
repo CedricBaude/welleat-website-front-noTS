@@ -1,23 +1,23 @@
 import React from 'react';
 import './style.css';
 import axios from "axios";
-const baseURL="http://localhost:5000/data";
+const baseURL = "http://https://testrender-6iwm.onrender.com/data";
 
-const Stats= () => {
-    const[post,setPost]=React.useState(null);
+const Stats = () => {
+    const [post, setPost] = React.useState(null);
 
-    React.useEffect(()=>{
-    axios.get(baseURL).then((response) => {
-        // console.log(response.data);
+    React.useEffect(() => {
+        axios.get(baseURL).then((response) => {
+            // console.log(response.data);
             setPost(response.data);
-    });
-    },[]);
-    
-    if(!post)return null;
+        });
+    }, []);
+
+    if (!post) return null;
     // console.log(post);
     //  console.log(post.data[1].valeur_manageable_data);
     // console.log(post.data[0].valeur_manageable_data);
-        return (
+    return (
         <section className='sub-content stats' id='numbers'>
             <h3 className='sub-title-2'>Nos chiffres<span className='dot'>.</span></h3>
             <div className="stat-number-content">

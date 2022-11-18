@@ -2,7 +2,7 @@ import React from 'react';
 import './appli.css';
 import homeLogo from "../../assets/img/welleat-logo.png";
 import axios from "axios";
-const baseURL = "http://localhost:5000/data";
+const baseURL = "https://testrender-6iwm.onrender.com/data";
 
 
 const Appli = () => {
