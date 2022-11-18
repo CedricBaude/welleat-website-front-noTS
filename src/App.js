@@ -17,17 +17,17 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<PublicRouter />} />
-          <Route path="admin/*" element={
+          <Route path="/*" element={<PublicRouter />} />
+          <Route path="/admin/*" element={
             <AuthGuard>
               <AdminRouter />
             </AuthGuard>
           } />
-          <Route path="dromadaire" element={<AuthRouter />} />
-          <Route path="mentions" element={<Mentions />} />
-          <Route path="privacy" element={<Privacy />} />
-          <Route path='cookies' element={<Cookies />} />
-          <Route path='legal' element={<Legal />} />
+          <Route path="/dromadaire" element={<AuthRouter />} />
+          <Route path="/mentions" element={<Mentions />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path='/cookies' element={<Cookies />} />
+          <Route path='/legal' element={<Legal />} />
         </Routes>
       </BrowserRouter>
 
