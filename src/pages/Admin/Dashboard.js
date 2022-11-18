@@ -38,7 +38,7 @@ const Dashboard = () => {
 
                     {
                         post.data.map(data => (
-                            <div className="dashboard-square-data">
+                            <div className="dashboard-square-data" key={data.id}>
                                 <div className="dashboard-square">{data.valeur_manageable_data}</div>
                                 <div className="dashboard-square-data-desc">{data.nom_manageable_data}</div>
                             </div>

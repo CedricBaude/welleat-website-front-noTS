@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/public/Header';
 import homeLogo from "../../assets/img/welleat-logo.png";
-import './home.css';
+import './style.css';
 import Appli from '../../components/public/Appli';
 import Easy from '../../components/public/Easy';
 import Efficient from '../../components/public/Efficient';

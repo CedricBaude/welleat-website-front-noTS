@@ -6,15 +6,16 @@ const Story = () => {
         <section className='sub-content story' id=''>
             <h3 className='sub-title-2'>La story Welleat<span className='dot'>.</span></h3>
             <div className="story-content">
+                {/* <div className='line'></div> */}
 
                 <div className="story-content-content">
                     <div className="story-content-1 story-last">Septembre 2022</div>
-                    <div className="story-content-2">Validation du produit Welleat<span className='dot'>.</span> en magasin</div>
+                    <div className="story-content-2">Validation du produit <span className='welleat'>Welleat</span><span className='dot'>.</span> en magasin</div>
                 </div>
 
                 <div className="story-content-content">
                     <div className="story-content-1">Mai à Aout 2022</div>
-                    <div className="story-content-2">Développement des différents outils Welleat<span className='dot'>.</span></div>
+                    <div className="story-content-2">Développement des différents outils <span className='welleat'>Welleat</span><span className='dot'>.</span></div>
                 </div>
 
                 <div className="story-content-content">

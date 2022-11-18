@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Newsletter from './Newsletter';
 import Review from './Review';
 import Simulation from './Simulation';
+import Story from './Story';
 
 const AdminRouter = () => {
     return (
@@ -17,6 +18,7 @@ const AdminRouter = () => {
                 <Route path="contact" element={<Contact />} />
                 <Route path="simulation" element={<Simulation />} />
                 <Route path="newsletter" element={<Newsletter />} />
+                <Route path='story' element={<Story />} />
                 <Route path="*" element={<Error />} />
             </Route>
         </Routes>

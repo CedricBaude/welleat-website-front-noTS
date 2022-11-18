@@ -32,7 +32,7 @@ const Login = () => {
     }
 
     return (
-        <form action="" onSubmit={onSubmit}>
+        <form action="" onSubmit={onSubmit} className="form-login">
             <div className="group">
                 <label htmlFor="login">Identifiant</label>
                 <input type="text" name="email" value={credentials.email} onChange={onChange} />

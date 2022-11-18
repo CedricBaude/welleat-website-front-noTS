@@ -23,6 +23,14 @@
     font-size: 26px;
 }
 
+.dot {
+    color: #FFC959;
+}
+
+.welleat {
+    color: #00C897;
+}
+
 /* -------------------- */
 /*SIMULATION*/
 
@@ -174,16 +182,22 @@
 .users-logo-picture {
     height: 120px;
     width: 120px;
-    background-color: grey;
+    background-color: white;
     border-radius: 10pt;
     /* background-image: url('/src/assets/img/welleat-logo.png'); */
     background-size: cover;
 }
 
+.users-logo-picture-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10pt;
+}
+
 .users-testi {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 70px;
     padding-left: 260px;
     padding-right: 260px;
 }
@@ -191,23 +205,48 @@
 .users-profil {
     height: 300px;
     width: 250px;
-    background-color: #676461;
-    border-radius: 10pt;
     display: flex;
-
     flex-direction: column;
     align-items: center;
 
 }
 
 .profil-picture {
-    height: 110px;
-    width: 110px;
+    height: 130px;
+    width: 130px;
     background-color: #FFC959;
     border-radius: 50%;
     margin-top: 20px;
+}
 
+.users-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 
+.users-name {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.users-job {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 4px;
+}
+
+.users-comment {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 40px;
 }
 
 /* -------------------- */
@@ -344,6 +383,12 @@
     margin-bottom: 50px;
 
 }
+
+/* .line {
+    height: 1000px;
+    width: 10px;
+    background-color: #676461;
+} */
 
 .story-content-content {
     width: 100%;
@@ -482,14 +527,143 @@
     height: 300px;
     background-color: black;
     margin-top: 100px;
+    background-color: #f2f2f1;
 }
 
-.footer h3 {
-    margin: 0;
-    padding: 0;
+.footer-content {
     width: 100%;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f1;
+}
 
+.footer-quote {
+    margin: 50px 0 50px 0;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.footer-content-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 40%;
+}
+
+.footerLogoImg {
+    width: 150px;
+    height: 150px;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 28px;
+}
+
+.footerLogoFont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerLogoFontImg {
+    width: 200px;
+    height: 61px;
+}
+
+.footer-newsletter {
+    width: 60%;
+    padding-left: 120px;
+}
+
+.footer-newsletter-desc {
+    text-align: left;
+    margin: 50px 0 24px 0;
+    font-size: 18px;
+}
+
+.footer-newsletter-content {}
+
+.footer-newsletter-content form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-newsletter-input {
+    margin: 0 20px;
+    text-align: left;
+}
+
+.footer-newsletter-input label {
+    margin-bottom: 10px;
+
+}
+
+.footer-newsletter-input input {
+    background-color: darkgrey;
+    height: 36px;
+    border: none;
+    border-radius: 10pt;
+    padding: 0 10px;
+    color: white;
+}
+
+.footer-newsletter-input input[type=text]:focus {
+    outline: none;
+}
+
+.footer-newsletter-button {
+    height: 40px;
+    width: 120px;
+    padding: 8px 4px;
+    background-color: #00C897;
+    color: white;
+    border-radius: 10pt;
+    border: none;
+    margin-top: 26px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-newsletter-button:hover {
+    color: black;
+    background-color: #FFC959;
+}
+
+.footer-mentions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-mentions ul {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.footer-mentions ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-mentions ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-mentions ul li a:hover {
+    color: #00C897;
 }

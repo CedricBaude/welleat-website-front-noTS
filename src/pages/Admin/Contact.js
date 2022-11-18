@@ -11,7 +11,7 @@ import axios from "axios";
 
 const baseURL = "http://localhost:5000/mail/listmail";
 const baseURLlistRappel = "http://localhost:5000/mail/listrappel/true";
-const baseURLlistnexletter = "http://localhost:5000/mail/listnewsletter/true";
+const baseURLlistnexletter = "http://localhost:5000/newsletter";
 
 const Contact = () => {
     const [post, setPost] = React.useState(null);

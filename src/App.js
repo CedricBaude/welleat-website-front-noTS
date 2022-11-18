@@ -5,6 +5,10 @@ import PublicRouter from './pages/Public/PublicRouter';
 import AdminRouter from './pages/Admin/AdminRouter';
 import AuthRouter from './pages/Auth/AuthRouter';
 import AuthGuard from './_helpers/AuthGuard';
+import Mentions from './pages/Public/Mentions';
+import Privacy from './pages/Public/Privacy';
+import Cookies from './pages/Public/Cookies';
+import Legal from './pages/Public/Legal';
 
 
 
@@ -20,6 +24,10 @@ function App() {
             </AuthGuard>
           } />
           <Route path="/dromadaire" element={<AuthRouter />} />
+          <Route path="/mentions" element={<Mentions />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path='/cookies' element={<Cookies />} />
+          <Route path='/legal' element={<Legal />} />
         </Routes>
       </BrowserRouter>
 

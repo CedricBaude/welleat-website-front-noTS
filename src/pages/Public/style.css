@@ -17,6 +17,9 @@
     overflow: 'scroll';
 }
 
+/* -------------------- */
+/*HOME*/
+
 .home-container {
     padding: 16% 0;
     width: auto;
@@ -37,4 +40,20 @@ h3 {
     color: white;
     text-align: left;
 
+}
+
+/* -------------------- */
+/*MENTIONS*/
+
+.mentions-container {
+    --sub-content-background: radial-gradient(circle farthest-corner at 50% -120%, rgba(255, 227, 90, 1) 0%, rgba(255, 201, 89, 1) 0%, rgba(43, 43, 42, 1) 72%);
+
+    background: var(--sub-content-background);
+    background-attachment: fixed;
+    overflow: 'scroll';
+    height: auto;
+}
+
+.mentions-content {
+    padding: 100px 0 100px 0;
 }
