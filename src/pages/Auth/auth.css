@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 60vh;
 
 }
 
@@ -76,7 +76,7 @@
     border-radius: 4pt;
     cursor: pointer;
     font-weight: 500;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .form-login-button:hover {

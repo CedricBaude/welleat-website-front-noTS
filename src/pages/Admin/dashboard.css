@@ -189,8 +189,8 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 30%;
     overflow: hidden;
+    width: 40%;
 }
 
 .dashboard-review-desc-user-job {
