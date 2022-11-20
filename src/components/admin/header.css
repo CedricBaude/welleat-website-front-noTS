@@ -3,6 +3,9 @@
     padding: 0;
     width: 300px;
     background-color: #00C897;
+    /* background-image: url("./../../assets/img/splash_empty_1024x1024.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .header-dashboard li {
@@ -61,6 +64,13 @@
     height: 34px;
     width: 220px;
     border: none;
-    border-radius: 2pt;
+    border-radius: 3pt;
     cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: #FFC959;
+}
+
+.logout:hover {
+    background-color: #C1C1C1;
 }
