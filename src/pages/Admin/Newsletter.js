@@ -31,8 +31,8 @@ const Newsletter = () => {
                     <h3 className='sub-title-dashboard'>LISTE DE PARTICIPANTS</h3>
                 </div>
 
-                <div className="dashboard-sub-content-content review">
-                    <div className="dashboard-square-data">
+                <div className="dashboard-sub-content-content newsletter">
+                    <div className="dashboard-square-data newsletter-square">
                         <div className="dashboard-square square-data-gray"><span className='square-data-gray-number'></span>{nbreDEdemande}</div>
                         <div className="dashboard-square-data-desc square-data-gray-desc">Inscrits à la newsletter</div>
                     </div>
@@ -41,15 +41,18 @@ const Newsletter = () => {
                         listnewsletter.data.map(data => {
                             const dateNewsLetter = new Date(data.createdAt).toLocaleDateString("fr")
                             return (
-                                <div className="dashboard-review" key={data.id}>
-                                    <div className='dashboard-review-desc-user'>
-                                        <div className='dashboard-review-desc-user-name'>{data.prenom_newsletter}</div>
+                                <div className="dashboard-review newsletter-user" key={data.id}>
+                                    <div className='dashboard-newsletter-desc-user'>
+                                        <div className="dashboard-newsletter-desc-name">Nom</div>
+                                        <div className='dashboard-newsletter-desc-user-name'>{data.prenom_newsletter}</div>
                                     </div>
-                                    <div className='dashboard-review-desc-email'>
-                                        <div className='dashboard-review-desc-user-email-email'>{data.email_newsletter}</div>
+                                    <div className='dashboard-newsletter-desc-email'>
+                                        <div className="dashboard-newsletter-desc-user-email">Email</div>
+                                        <div className='dashboard-newsletter-desc-user-email-email'>{data.email_newsletter}</div>
                                     </div>
-                                    <div className='dashboard-review-desc-date'>
-                                        <div className='dashboard-review-desc-user-date-date'>{dateNewsLetter}</div>
+                                    <div className='dashboard-newsletter-desc-date'>
+                                        <div className="dashboard-newsletter-desc-user-date">Date</div>
+                                        <div className='dashboard-newsletter-desc-user-date-date'>{dateNewsLetter}</div>
                                     </div>
                                 </div>
                             )
