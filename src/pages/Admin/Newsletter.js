@@ -38,19 +38,22 @@ const Newsletter = () => {
                     </div>
 
                     {
-                        listnewsletter.data.map(data => (
-                            <div className="dashboard-review" key={data.id}>
-                                <div className='dashboard-review-desc-user'>
-                                    <div className='dashboard-review-desc-user-name'>{data.prenom_newsletter}</div>
+                        listnewsletter.data.map(data => {
+                            const dateNewsLetter = new Date(data.createdAt).toLocaleDateString("fr")
+                            return (
+                                <div className="dashboard-review" key={data.id}>
+                                    <div className='dashboard-review-desc-user'>
+                                        <div className='dashboard-review-desc-user-name'>{data.prenom_newsletter}</div>
+                                    </div>
+                                    <div className='dashboard-review-desc-email'>
+                                        <div className='dashboard-review-desc-user-email-email'>{data.email_newsletter}</div>
+                                    </div>
+                                    <div className='dashboard-review-desc-date'>
+                                        <div className='dashboard-review-desc-user-date-date'>{dateNewsLetter}</div>
+                                    </div>
                                 </div>
-                                <div className='dashboard-review-desc-email'>
-                                    <div className='dashboard-review-desc-user-email-email'>{data.email_newsletter}</div>
-                                </div>
-                                <div className='dashboard-review-desc-date'>
-                                    <div className='dashboard-review-desc-user-date-date'>{data.createdAt}</div>
-                                </div>
-                            </div>
-                        ))
+                            )
+                        })
                     }
 
 

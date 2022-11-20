@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.4876833d.css",
-    "main.js": "/static/js/main.6110a705.js",
+    "main.css": "/static/css/main.5fc1d333.css",
+    "main.js": "/static/js/main.c830d61c.js",
     "static/js/787.af32c96f.chunk.js": "/static/js/787.af32c96f.chunk.js",
+    "static/media/flavie.png": "/static/media/flavie.bb696feada9ecae6b0ae.png",
+    "static/media/konogan.png": "/static/media/konogan.92aa0410a0b3fca50fc7.png",
+    "static/media/thomas.png": "/static/media/thomas.1fd0801ea4a5b894316b.png",
     "static/media/splash_empty_1024x1024.png": "/static/media/splash_empty_1024x1024.3f90e3790775d0d496b6.png",
     "static/media/xavatar.png": "/static/media/xavatar.2f93e80bff9c51579bf0.png",
     "static/media/xavatar2.png": "/static/media/xavatar2.2f93e80bff9c51579bf0.png",
     "static/media/welleat-logo.png": "/static/media/welleat-logo.a2f045c33be1ce917824.png",
+    "static/media/lorem-1.png": "/static/media/lorem-1.75fa0f9b7bf298a29f9b.png",
     "static/media/welleat-logo-1-white.png": "/static/media/welleat-logo-1-white.19d0d997639fe4794f63.png",
     "static/media/welleat-logo-1.png": "/static/media/welleat-logo-1.fb3aee8eebcc9df6b8ff.png",
+    "static/media/lorem-2.png": "/static/media/lorem-2.18998acbca652eb99b58.png",
     "static/media/logo_432x432.png": "/static/media/logo_432x432.85a7b621350666e2d394.png",
     "index.html": "/index.html",
-    "main.4876833d.css.map": "/static/css/main.4876833d.css.map",
-    "main.6110a705.js.map": "/static/js/main.6110a705.js.map",
+    "main.5fc1d333.css.map": "/static/css/main.5fc1d333.css.map",
+    "main.c830d61c.js.map": "/static/js/main.c830d61c.js.map",
     "787.af32c96f.chunk.js.map": "/static/js/787.af32c96f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4876833d.css",
-    "static/js/main.6110a705.js"
+    "static/css/main.5fc1d333.css",
+    "static/js/main.c830d61c.js"
   ]
 }

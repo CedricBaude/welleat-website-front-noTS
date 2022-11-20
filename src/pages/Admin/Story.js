@@ -1,5 +1,4 @@
 import React from 'react';
-import useState from 'react';
 import Header from '../../components/admin/Header';
 import axios from "axios";
 
@@ -16,6 +15,8 @@ const Story = () => {
             console.log(response.data);
         });
     }, []);
+
+    if (!story) return null;
 
     return (
         <div className='dashboard-content'>

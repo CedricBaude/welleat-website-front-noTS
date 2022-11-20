@@ -33,11 +33,13 @@ const Contact = () => {
                         <textarea name="message" id="message" rows="10" ></textarea>
                     </div>
                     <br />
-                    <div>
-                        <div className="form-contact-input">
-                            <label htmlFor="text">Souhaitez-vous être rappelé par téléphone?</label>
-                            <input type="radio" name="rappel-oui" id="rappel-oui" value="oui" />Oui
-                            <input type="radio" name="rappel-non" id="rappel-non" value="non" />Non
+                    <div className="form-contact-input-newsletter">
+                        <label htmlFor="text">Souhaitez-vous être rappelé par téléphone?<span className='dot'>*</span></label>
+                        <div className="form-contact-input-newsletter-radio">
+                            <input type="radio" name="rappel-oui" id="rappel-oui" value="oui" />
+                            <div className="form-contact-input-newsletter-radio-box">Oui</div>
+                            <input type="radio" name="rappel-non" id="rappel-non" value="non" />
+                            <div className="form-contact-input-newsletter-radio-box">Non</div>
                         </div>
                     </div>
                     <p><span className='dot'>*</span>obligatoire</p>

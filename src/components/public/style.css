@@ -168,15 +168,14 @@
 
 .use {
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .users-logo {
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-top: 16px;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 .users-logo-picture {
@@ -198,8 +197,8 @@
     display: flex;
     justify-content: space-around;
     margin-top: 70px;
-    padding-left: 260px;
-    padding-right: 260px;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .users-profil {
@@ -236,17 +235,29 @@
 .users-job {
     text-align: center;
     color: white;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 14px;
+    font-weight: 100;
     margin-top: 4px;
+    min-height: 30px;
 }
 
 .users-comment {
     text-align: center;
     color: white;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
     margin-top: 40px;
+    font-style: italic;
+}
+
+.users-comment::before {
+    content: "";
+    background-color: #00C897;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    left: 0;
+
 }
 
 /* -------------------- */
@@ -357,6 +368,28 @@
     border: none;
     padding: 16px 28px;
     border-radius: 12pt;
+}
+
+.form-contact-input-newsletter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 26px;
+}
+
+.form-contact-input-newsletter label {
+    margin-right: 50px;
+}
+
+.form-contact-input-newsletter-radio-box {
+    margin-right: 20px;
+
+}
+
+.form-contact-input-newsletter-radio {
+    display: flex;
+    flex-direction: row;
 }
 
 .submit-button input:hover {
