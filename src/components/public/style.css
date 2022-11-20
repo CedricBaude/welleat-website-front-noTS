@@ -539,10 +539,9 @@
 
 .footer-quote {
     margin: 50px 0 50px 0;
-    font-size: 30px;
+    font-size: 34px;
     font-style: italic;
     font-weight: 500;
-    font-size: 30px;
 }
 
 .footer-content-content {
@@ -599,6 +598,8 @@
 .footer-newsletter-input {
     margin: 0 20px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-newsletter-input label {

@@ -1,21 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.login-content {
+    background-image: url("./../../assets/img/splash_empty_1024x1024.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20%;
+
+}
+
+.login-logo {
+    height: 140px;
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 32px;
+    background-image: url("./../../assets/img/logo_432x432.png");
+    background-size: cover;
+
+}
+
+.login-logo-text {
+    height: 58px;
+    width: 190px;
+    margin: 0 auto;
+
+    background-image: url("./../../assets/img/welleat-logo-1-white.png");
+    background-size: contain;
+
+}
+
 .form-login {
     width: 180px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 24px;
+    padding: 46px;
+    border: 1px solid white;
+    background-color: #ffffff52;
+    border-radius: 10pt;
 }
 
 .group {
     margin-bottom: 15px;
 }
 
-.group input {
+.form-login-input {
     width: 172px;
+    height: 34px;
+    background-color: #edededcc;
+    border: none;
+    border-radius: 6pt;
+    padding-left: 10px;
 }
 
-label {
+.form-login-label {
     display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 8px;
 }
 
-button {
+
+.form-login-button {
     width: 100%;
+    background-color: #FFC959;
+    border: none;
+    padding: 10px;
+    border-radius: 4pt;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.form-login-button:hover {
+    background-color: white;
+    font-weight: 500;
+
 }

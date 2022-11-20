@@ -5,13 +5,11 @@ import Error from '../../_utils/Error';
 
 const AuthRouter = () => {
     return (
-        <div>
-            <Routes>
-                <Route index element={<Login />} />
-                <Route path="dromadaire" element={<Login />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
-        </div>
+        <Routes>
+            <Route index element={<Login />} />
+            <Route path="dromadaire" element={<Login />} />
+            <Route path="*" element={<Error />} />
+        </Routes>
     );
 };
 

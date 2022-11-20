@@ -32,19 +32,28 @@ const Login = () => {
     }
 
     return (
-        <form action="" onSubmit={onSubmit} className="form-login">
-            <div className="group">
-                <label htmlFor="login">Identifiant</label>
-                <input type="text" name="email" value={credentials.email} onChange={onChange} />
+        <div className="login-content">
+
+            <div className="login-logo">
+
             </div>
-            <div className="group">
-                <label htmlFor="password">Mot de passe</label>
-                <input type="text" name='password' value={credentials.password} onChange={onChange} />
+            <div className="login-logo-text">
+
             </div>
-            <div className="group">
-                <button>Connexion</button>
-            </div>
-        </form>
+            <form action="" onSubmit={onSubmit} className="form-login">
+                <div className="group">
+                    <label className='form-login-label' htmlFor="login">Identifiant</label>
+                    <input className='form-login-input' type="text" name="email" value={credentials.email} onChange={onChange} />
+                </div>
+                <div className="group">
+                    <label className='form-login-label' htmlFor="password">Mot de passe</label>
+                    <input className='form-login-input' type="text" name='password' value={credentials.password} onChange={onChange} />
+                </div>
+                <div className="group">
+                    <button className='form-login-button'>CONNEXION</button>
+                </div>
+            </form>
+        </div>
     );
 };
 
