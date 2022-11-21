@@ -39,6 +39,7 @@ const Contact = () => {
     let nbreDemandeRappel = parseFloat((listRappel.message / nbreDEdemande) * 100).toFixed(2);
     console.log(nbreDEdemande);
     console.log(nbreDemandeRappel);
+    console.log(listRappel);
 
     return (
         <div className='dashboard-content'>
