@@ -575,3 +575,15 @@
     text-align: left;
     width: 100%;
 }
+
+/* ---------------------------- */
+.contact-box {
+    padding-left: 30px;
+}
+
+.contact-name {
+    width: 16%;
+    padding-bottom: 2px;
+}
+
+/* ---------------------------- */

@@ -6,7 +6,7 @@ const Contact = () => {
         <section className='sub-content contact' id="contact">
             <h3 className='sub-title-2'>Nous contacter<span className='dot'>.</span></h3>
             <div className='contact-form'>
-                <form className='form-contact'>
+                <form className='form-contact' action="/#contact">
                     <div className="form-contact-input">
                         <label htmlFor="first-name">Nom<span className='dot'>*</span></label>
                         <input type="text" name="first-name" id="first-name" />
