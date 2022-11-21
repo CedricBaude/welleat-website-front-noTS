@@ -77,6 +77,14 @@
     box-shadow: 5px 5px 8px gray;
 }
 
+.dashboard-square:focus {
+    outline: none;
+}
+
+.dashboard-square::placeholder {
+    color: rgb(87, 87, 87);
+}
+
 .dashboard-square-data-desc {
     height: 30px;
     line-height: 30px;
