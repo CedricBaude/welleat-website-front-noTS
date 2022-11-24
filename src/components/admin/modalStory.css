@@ -1,4 +1,4 @@
-.modalContainer {
+.modalStoryContainer {
     position: fixed;
     display: flex;
     width: 100%;
@@ -13,7 +13,7 @@
     transition: opacity 0.3s, visibility 0.5s, transform 0.5s;
 }
 
-.modalContainerActive {
+.modalStoryContainerActive {
     position: fixed;
     display: flex;
     width: 100%;
@@ -28,7 +28,7 @@
     /* background-color: rgba(128, 128, 128, 0.336); */
 }
 
-.modalReview {
+.modalStoryReview {
     width: 540px;
     height: 726px;
     background-color: #FFFFFF;
@@ -50,7 +50,7 @@
     background-size: cover;
 }
 
-.modalReviewHeader {
+.modalStoryReviewHeader {
     width: 540px;
     height: 64px;
     background-color: #F5F5F5;
@@ -60,7 +60,7 @@
     border-top-right-radius: 6pt;
 }
 
-.modalReviewHeader h3 {
+.modalStoryReviewHeader h3 {
     color: black;
     margin: 0;
     padding: 0;
@@ -68,14 +68,14 @@
     text-transform: uppercase;
 }
 
-.modalReviewBody {
+.modalStoryReviewBody {
     height: 588px;
     background-color: #FFFFFF;
     text-align: left;
     padding: 20px 50px 0 50px;
 }
 
-.modalReviewInput label {
+.modalStoryReviewInput label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -84,7 +84,7 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.modalReviewInput {
+.modalStoryReviewInput {
     font-size: 18px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
@@ -92,7 +92,7 @@
 }
 
 
-.modalReviewInput input {
+.modalStoryReviewInput input {
     height: 30px;
     border: 1px solid #0000001F;
     border-radius: 6pt;
@@ -101,7 +101,7 @@
 
 }
 
-.modalReviewTextArea label {
+.modalStoryReviewTextArea label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -110,16 +110,16 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.modalReviewTextArea textarea {
+.modalStoryReviewTextArea textarea {
     border: 1px solid #0000001F;
     border-radius: 6pt;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.modalReviewPicture {}
+.modalStoryReviewPicture {}
 
-.modalReviewPicture label {
+.modalStoryReviewPicture label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -136,7 +136,7 @@
     margin: auto;
 }
 
-.modalReviewFooter {
+.modalStoryReviewFooter {
     width: 540px;
     height: 74px;
     background-color: #F5F5F5;
@@ -147,7 +147,7 @@
     justify-content: flex-end;
 }
 
-.addUserReview {
+.addStoryReview {
     width: 110px;
     height: 42px;
     background: #FFC959;

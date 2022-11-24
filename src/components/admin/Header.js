@@ -28,6 +28,7 @@ const Header = () => {
                     <li><Link to="/admin/simulation">SIMULATION DE GAINS</Link></li>
                     <li><Link to="/admin/newsletter">NEWSLETTER</Link></li>
                     <li><Link to="/admin/story">STORY</Link></li>
+                    <li><Link to="/admin/media">MEDIA</Link></li>
                 </ul>
             </nav>
             <button className='logout' onClick={logOut}>DECONNEXION</button>

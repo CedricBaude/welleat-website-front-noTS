@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { ALayout, Dashboard } from "../../pages/Admin";
 import Error from '../../_utils/Error';
 import Contact from './Contact';
+import Media from './Media';
 import Newsletter from './Newsletter';
 import Review from './Review';
 import Simulation from './Simulation';
@@ -19,6 +20,7 @@ const AdminRouter = () => {
                 <Route path="simulation" element={<Simulation />} />
                 <Route path="newsletter" element={<Newsletter />} />
                 <Route path='story' element={<Story />} />
+                <Route path="media" element={<Media />} />
                 <Route path="*" element={<Error />} />
             </Route>
         </Routes>

@@ -6,16 +6,17 @@ import './dashboard.css';
 import callSelected from "../../assets/img/call-selected.png";
 import callUnSelected from "../../assets/img/call-unselected.png";
 import axios from "axios";
+import { useState, useEffect } from 'react';
 
 
 const baseURL = "https://testrender-6iwm.onrender.com/mail/listmail";
-const baseURLlistRappel = "https://testrender-6iwm.onrender.com/mail/listrappel/true";
+const baseURLlistRappel = "https://testrender-6iwm.onrender.com/mail/testcompte/true";
 
 
 const Contact = () => {
-    const [post, setPost] = React.useState(null);
+    const [post, setPost] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         axios.get(baseURL).then((response) => {
             // console.log(response.data);
             setPost(response.data);
@@ -25,7 +26,7 @@ const Contact = () => {
 
     const [listRappel, setRappel] = React.useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         axios.get(baseURLlistRappel).then((response) => {
             // console.log(response.data);
             setRappel(response.data);

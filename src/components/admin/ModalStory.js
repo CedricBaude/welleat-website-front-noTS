@@ -1,46 +1,36 @@
 import React from 'react';
 import './modalStory.css';
-const modalContainerActive = 'modalContainerActive';
-const modalContainer = 'modalContainer';
+const modalStoryContainerActive = 'modalStoryContainerActive';
+const modalStoryContainer = 'modalStoryContainer';
 
 const ModalStory = (props) => {
     const modalState = props.toggle
     const close = props.action
     return (
-        <div className={`${modalContainer} ${modalState ? modalContainerActive : ''}`}>
-            <div className="modalReview">
-                <div className="modalReviewHeader">
-                    <h3>Ajouter un avis utilisateur</h3>
+        <div className={`${modalStoryContainer} ${modalState ? modalStoryContainerActive : ''}`}>
+            <div className="modalStoryReview">
+                <div className="modalStoryReviewHeader">
+                    <h3>Ajouter un media</h3>
                     <div className="modalClose" onClick={close}></div>
                 </div>
 
-                <div className="modalReviewBody">
-                    <div className="modalReviewInput">
-                        <label htmlFor="">Prénom</label>
+                <div className="modalStoryReviewBody">
+                    <div className="modalStoryReviewInput">
+                        <label htmlFor="">Titre</label>
                         <input type="text" />
                     </div>
-                    <div className="modalReviewInput">
-                        <label htmlFor="">Magasin / Enseigne</label>
+                    <div className="modalStoryReviewInput">
+                        <label htmlFor="">Lien du media</label>
                         <input type="text" />
                     </div>
-                    <div className="modalReviewInput">
-                        <label htmlFor="">Poste</label>
-                        <input type="text" />
-                    </div>
-                    <div className="modalReviewTextArea">
-                        <label htmlFor="">Commentaire</label>
+                    <div className="modalStoryReviewTextArea">
+                        <label htmlFor="">Description</label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div className="modalReviewPicture">
-                        <label htmlFor="">Photo</label>
-                        <div className="UserReviewPictureTemp">
-
-                        </div>
                     </div>
 
                 </div>
-                <div className="modalReviewFooter">
-                    <button className='addUserReview'>AJOUTER</button>
+                <div className="modalStoryReviewFooter">
+                    <button className='addStoryReview'>AJOUTER</button>
                 </div>
             </div>
 

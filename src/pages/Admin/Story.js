@@ -41,12 +41,12 @@ const Story = () => {
                         story?.data.map(data => {
                             return (
                                 <div className="dashboard-review" key={data.id}>
-                                    <div className='dashboard-review-desc-user'>
-                                        <div className='dashboard-review-desc-user-name'>{data.nom_story}</div>
+                                    <div className='dashboard-review-desc-user dashboard-story-name'>
+                                        <div className='dashboard-review-desc-user-name '>{data.nom_story}</div>
                                     </div>
 
-                                    <div className='dashboard-review-desc-store'>
-                                        <div className='dashboard-review-desc-user-store-name'>{data.description_story}</div>
+                                    <div className='dashboard-review-desc-store dashboard-story-desc-box'>
+                                        <div className='dashboard-review-desc-user-store-name dashboard-story-desc'>{data.description_story}</div>
                                     </div>
 
                                 </div>
