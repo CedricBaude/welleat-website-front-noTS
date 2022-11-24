@@ -28,7 +28,7 @@ const Appli = () => {
             </div>
             <div className="appli-right-content">
                 <p><span className='fonter'>Welleat<span className='dot'>.</span></span> est une <span className='fonter'>solution de gestion des Métiers de bouche</span>  <br />
-                    qui facilite la vie de plus de <span className='fonter'>{post.data[1].valeur_manageable_data} utilisateurs dans le monde.</span></p>
+                    qui facilite la vie de plus de <span className='fonter'>{post.data[0].valeur_manageable_data} utilisateurs dans le monde.</span></p>
                 <p><span className='fonter'>Acteurs de la Food</span>, optimisez votre production <br />
                     grâce à des outils dédiés et directement conçus <br />
                     pour vous faciliter la vie.</p>
