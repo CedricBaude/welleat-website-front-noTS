@@ -24,12 +24,16 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
-.header-dashboard li a:active {
-    background-color: #FFC959;
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .user-desc {
     display: flex;
@@ -69,17 +73,23 @@
     text-align: left;
 }
 
+.logOutButton {
+    margin-top: 50px;
+}
+
 .logout {
-    height: 34px;
-    width: 220px;
+    font-size: 16px;
     border: none;
     border-radius: 3pt;
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 0.5px;
-    background-color: #FFC959;
+    background-color: #F35421;
+    color: white;
+    padding: 14px 28px;
 }
 
 .logout:hover {
-    background-color: #C1C1C1;
+    background-color: white;
+    color: #F35421;
 }
