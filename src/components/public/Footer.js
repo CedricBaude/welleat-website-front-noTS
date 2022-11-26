@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import footerLogo from "../../assets/img/welleat-logo.png";
 import footerLogoFont from "../../assets/img/welleat-logo-1.png";
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 
 
 const Footer = () => {
+    const [nameNewsletter, SetNameNewsletter] = useState("");
+    const [mailNewsletter, SetmailNewsletter] = useState("");
+    function postnews() {
+        console.log('fonction send envoyée');
+
+        axios
+            .post(
+                "https://testrender-6iwm.onrender.com/newsletter",
+                {
+                    prenom: nameNewsletter,
+                    email: mailNewsletter
+                }
+            )
+            .then((res) => console.log("success", res))
+            .catch((err) => {
+                console.log(err.response);
+            });
+        alert("Votre demande d'adhésion à notre newsletter à bien été envoyée.");
+    };
+
     return (
         <div className='footer'>
             <div className="footer-content">
@@ -29,16 +51,16 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-newsletter-content">
-                            <form action="" className="footer-newsletter-content">
+                            <form onSubmit={postnews} className="footer-newsletter-content">
                                 <div className="footer-newsletter-input">
                                     <label htmlFor="">Prénom</label>
-                                    <input type="text" />
+                                    <input type="text" onChange={e => SetNameNewsletter(e.target.value)} value={nameNewsletter} required />
                                 </div>
                                 <div className="footer-newsletter-input">
                                     <label htmlFor="">Adresse mail</label>
-                                    <input type="text" />
+                                    <input type="email" onChange={e => SetmailNewsletter(e.target.value)} value={mailNewsletter} required />
                                 </div>
-                                <button className='footer-newsletter-button'>Je m'inscris !</button>
+                                <button type='submit' className='footer-newsletter-button'>Je m'inscris !</button>
                             </form>
                         </div>
 

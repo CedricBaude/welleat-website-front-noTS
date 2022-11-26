@@ -293,6 +293,7 @@
     padding-right: 90px;
     font-size: 14px;
     font-weight: 300;
+    margin-top: 20px;
 }
 
 .form-contact-input {
@@ -376,6 +377,7 @@
     width: 100%;
     font-size: 18px;
     padding-left: 26px;
+    height: 20px;
 }
 
 .form-contact-input-newsletter label {
@@ -384,12 +386,33 @@
 
 .form-contact-input-newsletter-radio-box {
     margin-right: 20px;
+    margin-left: 4px;
 
 }
 
 .form-contact-input-newsletter-radio {
     display: flex;
     flex-direction: row;
+}
+
+.phone {
+    height: 28px;
+    width: 100px;
+    margin-top: -4px;
+    margin-right: 10px;
+    margin-left: -4px;
+    padding-left: 10px;
+    padding-right: 6px;
+    border-radius: 10pt;
+    background-color: #676461;
+    border: none;
+    color: white;
+    font-style: italic;
+}
+
+.phone::placeholder {
+    color: white;
+    font-style: italic;
 }
 
 .submit-button input:hover {
