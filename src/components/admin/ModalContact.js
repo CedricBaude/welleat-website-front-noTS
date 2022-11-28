@@ -7,8 +7,27 @@ const ModalContact = (props) => {
     const modalState = props.toggle;
     const close = props.action;
     const contactData = props.contact;
+    let name, firstname, societe, email, commentaire, tel, demandeRappel;
+    if (props.contact) {
+        name = props.contact.nom_contact;
+        firstname = props.contact.prenom_contact;
+        societe = props.contact.societe_contact;
+        email = props.contact.email_contact;
+        commentaire = props.contact.message_contact;
+        tel = props.contact.tel;
+        demandeRappel = props.contact.demande_rappel;
+    }
+    console.log(props.demande_rappel);
 
-    console.log(contactData);
+    let rappel = '';
+    if (demandeRappel) {
+        rappel = "La personne souhaite être rapellée au " + tel;
+    } else {
+        rappel = "La personne ne souhaite pas être rapellée";
+    }
+
+
+    // console.dir(contactData);
 
 
 
@@ -17,34 +36,33 @@ const ModalContact = (props) => {
         <div className={`${modalContainer} ${modalState ? modalContainerActive : ''}`}>
             <div className="modalReview">
                 <div className="modalReviewHeader">
-                    <h3>Ajouter un avis utilisateur</h3>
+                    <h3>Demande de contact - Fiche utilisateur </h3>
                     <div className="modalClose" onClick={close}></div>
                 </div>
-
+                {/* {console.log(contactData)} */}
                 <div className="modalReviewBody">
                     <div className="modalReviewInput">
-                        <label htmlFor="">Prénom</label>
-                        <input type="text" />
+                        <label htmlFor="">Nom - Prénom</label>
+                        <input type="text" placeholder={name + " " + firstname} />
+                        <div>
+
+                        </div>
+
                     </div>
                     <div className="modalReviewInput">
-                        <label htmlFor="">Magasin / Enseigne</label>
-                        <input type="text" />
+                        <label htmlFor="">Email</label>
+                        <input type="text" placeholder={email} />
                     </div>
                     <div className="modalReviewInput">
-                        <label htmlFor="">Poste</label>
-                        <input type="text" />
+                        <label htmlFor="">Société</label>
+                        <input type="text" placeholder={societe} />
                     </div>
                     <div className="modalReviewTextArea">
                         <label htmlFor="">Commentaire</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder={commentaire}></textarea>
                     </div>
-                    <div className="modalReviewPicture">
-                        <label htmlFor="">Photo</label>
-                        <div className="UserReviewPictureTemp">
-
-                        </div>
-                    </div>
-
+                    { }
+                    <div>{rappel}</div>
                 </div>
                 <div className="modalReviewFooter">
                     <button className='addUserReview'>AJOUTER</button>
