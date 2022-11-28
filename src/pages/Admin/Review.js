@@ -21,10 +21,12 @@ const Review = () => {
             setPost(response.data);
         });
     }, []);
+
     const [modalState, setModalState] = useState(false);
     function openModal() {
         setModalState(!modalState);
     };
+
     return (
         <div className='dashboard-content'>
             <Header />

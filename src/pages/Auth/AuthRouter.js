@@ -8,6 +8,7 @@ const AuthRouter = () => {
         <Routes>
             <Route index element={<Login />} />
             <Route path="dromadaire" element={<Login />} />
+            <Route path="dashboard" element={<Login />} />
             <Route path="*" element={<Error />} />
         </Routes>
     );
