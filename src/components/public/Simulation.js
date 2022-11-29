@@ -73,7 +73,7 @@ const Simulation = () => {
                     </div>
                 </div>
                 <div><p className='p-sim'>Votre bénéfice serait potentiellement de {reponse?.data?.data?.benefice_avec_WellEat || ""}</p></div>
-                <div className='submit-button' >
+                <div className='submit-button sim-button' >
                     <button type="submit">Envoyer</button>
                 </div>
             </form>

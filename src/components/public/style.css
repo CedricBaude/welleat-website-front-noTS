@@ -371,6 +371,10 @@
     border-radius: 12pt;
 }
 
+.sim-button {
+    text-align: center;
+}
+
 .form-contact-input-newsletter {
     display: flex;
     flex-direction: row;
