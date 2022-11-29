@@ -1,37 +1,33 @@
-import React from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import './style.css';
+import axios from 'axios';
+
+const baseURL = "https://testrender-6iwm.onrender.com/story";
 
 const Story = () => {
+    const [listStorys, setlistStorys] = useState(null);
+
+    useLayoutEffect(() => {
+        axios.get(baseURL).then((response) => {
+            setlistStorys(response.data);
+            console.log(response.data);
+        });
+    }, []);
     return (
         <section className='sub-content story' id=''>
             <h3 className='sub-title-2'>La story Welleat<span className='dot'>.</span></h3>
             <div className="story-content">
-                {/* <div className='line'></div> */}
 
-                <div className="story-content-content">
-                    <div className="story-content-1 story-last">Septembre 2022</div>
-                    <div className="story-content-2">Validation du produit <span className='welleat'>Welleat</span><span className='dot'>.</span> en magasin</div>
-                </div>
-
-                <div className="story-content-content">
-                    <div className="story-content-1">Mai à Aout 2022</div>
-                    <div className="story-content-2">Développement des différents outils <span className='welleat'>Welleat</span><span className='dot'>.</span></div>
-                </div>
-
-                <div className="story-content-content">
-                    <div className="story-content-1">Avril 2022</div>
-                    <div className="story-content-2">Test d'un pack avec les deux enseignes afin de valider que nos outils répondaient aux problématiques métiers</div>
-                </div>
-
-                <div className="story-content-content">
-                    <div className="story-content-1">Octobre 2021</div>
-                    <div className="story-content-2">Adaptation aux hypermarchés avec Leclerc, leader en part de marché France et son magasin pilote Atlantis </div>
-                </div>
-
-                <div className="story-content-content">
-                    <div className="story-content-1">Février 2021</div>
-                    <div className="story-content-2">Une solution co-construite avec Partisans du Goût, leader d'opinion</div>
-                </div>
+                {
+                    listStorys?.data.map((data) => {
+                        return (
+                            <div className="story-content-content" key={data.id}>
+                                <div className="story-content-1 story-last">{data.nom_story}</div>
+                                <div className="story-content-2">{data.description_story}</div>
+                            </div>
+                        )
+                    })
+                }
 
             </div>
         </section>

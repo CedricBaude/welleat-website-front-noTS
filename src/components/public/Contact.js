@@ -17,7 +17,8 @@ const Contact = () => {
 
 
 
-    function postcontactform() {
+    function postcontactform(e) {
+        e.preventDefault();
         console.log('fonction send envoyée');
 
         axios
@@ -37,7 +38,14 @@ const Contact = () => {
             .catch((err) => {
                 console.log(err.response);
             });
-        alert("Votre message à bien été envoyé.");
+        alert("Votre message a bien été envoyé.");
+        SetFirstName("");
+        SetLastName("");
+        SetContactEmail("");
+        SetContactSociety("");
+        SetContactMessage("");
+        SetContactPhone("");
+        SetRadio("");
     };
 
     function openInputYes() {

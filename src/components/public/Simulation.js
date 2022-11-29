@@ -2,11 +2,12 @@ import React, { useState, useLayoutEffect } from 'react';
 import './style.css';
 import axios from "axios";
 const baseURL = "https://testrender-6iwm.onrender.com/data";
-let x;
+
 const Simulation = () => {
     const [post, setPost] = useState(null);
     const [inputCA, SetInputCA] = useState("");
     const [inputMarge, SetInputMarge] = useState("");
+    const [reponse, setReponse] = useState("");
 
     useLayoutEffect(() => {
         axios.get(baseURL).then((response) => {
@@ -30,8 +31,11 @@ const Simulation = () => {
                 marge: inputMarge
             }
         )
-            .then(
-                (res) => console.log(res.data.data.id)
+            .then((res) => {
+                return (
+                    setReponse(res)
+                )
+            }
             )
 
 
@@ -52,8 +56,10 @@ const Simulation = () => {
                         <input type="text" className='input-1' onChange={e => SetInputCA(e.target.value)} value={inputCA} />
                     </div>
                     <div className="sim-input">
-                        <p className='p-input-2'>Votre CA avec Welleat<span className='dot'>.</span></p><input type="text" className='input-1' />
+                        <p className='p-input-2'>Votre CA avec Welleat<span className='dot'>.</span></p><input type="text" className='input-1' value={reponse?.data?.data?.CA_avec_WellEat || ""} readOnly />
                     </div>
+                </div>
+                <div>
 
                 </div>
                 <div className="sim-content-2">
@@ -63,12 +69,13 @@ const Simulation = () => {
                     </div>
                     <div className="sim-input">
                         <p className='p-input-2'>Votre marge avec Welleat<span className='dot'>.</span></p>
-                        <div>{x}</div>
-                        <input type="text" className='input-1' />
+                        <input type="text" className='input-1' value={reponse?.data?.data?.marge_avec_WellEat || ""} readOnly />
                     </div>
                 </div>
-                <div><p className='p-sim'>Votre bénéfice serait de XXX.</p></div>
-                <input type="submit" value="Envoyer" />
+                <div><p className='p-sim'>Votre bénéfice serait potentiellement de {reponse?.data?.data?.benefice_avec_WellEat || ""}</p></div>
+                <div className='submit-button' >
+                    <button type="submit">Envoyer</button>
+                </div>
             </form>
             <p className='p-sim'>Avec Welleat<span className='dot'>.</span>, vous bénéficiez donc d’une augmentation de {post.data[1].valeur_manageable_data}% de votre CA et de {post.data[2].valeur_manageable_data}% de votre marge.</p>
         </section>

@@ -10,21 +10,16 @@ const ModalStory = (props) => {
         <div className={`${modalStoryContainer} ${modalState ? modalStoryContainerActive : ''}`}>
             <div className="modalStoryReview">
                 <div className="modalStoryReviewHeader">
-                    <h3>Ajouter un media</h3>
+                    <h3>Ajouter une story</h3>
                     <div className="modalClose" onClick={close}></div>
                 </div>
-
                 <div className="modalStoryReviewBody">
                     <div className="modalStoryReviewInput">
-                        <label htmlFor="">Titre</label>
-                        <input type="text" />
-                    </div>
-                    <div className="modalStoryReviewInput">
-                        <label htmlFor="">Lien du media</label>
+                        <label htmlFor="">Quand?</label>
                         <input type="text" />
                     </div>
                     <div className="modalStoryReviewTextArea">
-                        <label htmlFor="">Description</label>
+                        <label htmlFor="">Quoi? </label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
 

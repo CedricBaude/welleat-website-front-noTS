@@ -11,7 +11,8 @@ import axios from 'axios';
 const Footer = () => {
     const [nameNewsletter, SetNameNewsletter] = useState("");
     const [mailNewsletter, SetmailNewsletter] = useState("");
-    function postnews() {
+    function postnews(e) {
+        e.preventDefault();
         console.log('fonction send envoyée');
 
         axios
@@ -27,6 +28,8 @@ const Footer = () => {
                 console.log(err.response);
             });
         alert("Votre demande d'adhésion à notre newsletter à bien été envoyée.");
+        SetNameNewsletter("");
+        SetmailNewsletter("");
     };
 
     return (
