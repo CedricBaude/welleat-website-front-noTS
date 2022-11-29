@@ -1,5 +1,5 @@
 import React from 'react';
-import './modalReview.css';
+import './modalContact.css';
 const modalContainerActive = 'modalContainerActive';
 const modalContainer = 'modalContainer';
 
@@ -43,7 +43,7 @@ const ModalContact = (props) => {
                 <div className="modalReviewBody">
                     <div className="modalReviewInput">
                         <label htmlFor="">Nom - Prénom</label>
-                        <input type="text" placeholder={name + " " + firstname} />
+                        <input type="text" placeholder={name + " " + firstname} className="inputModalContact" />
                         <div>
 
                         </div>
@@ -51,15 +51,15 @@ const ModalContact = (props) => {
                     </div>
                     <div className="modalReviewInput">
                         <label htmlFor="">Email</label>
-                        <input type="text" placeholder={email} />
+                        <input type="text" placeholder={email} className="inputModalContact" />
                     </div>
                     <div className="modalReviewInput">
                         <label htmlFor="">Société</label>
-                        <input type="text" placeholder={societe} />
+                        <input type="text" placeholder={societe} className="inputModalContact" />
                     </div>
                     <div className="modalReviewTextArea">
                         <label htmlFor="">Commentaire</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder={commentaire}></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder={commentaire} className="inputModalContactArea"></textarea>
                     </div>
                     { }
                     <div>{rappel}</div>
