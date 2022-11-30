@@ -60,17 +60,17 @@ const Contact = () => {
                 <form className='form-contact' onSubmit={postcontactform}>
                     <div className="form-contact-input">
                         <label htmlFor="first-name">Nom<span className='dot'>*</span></label>
-                        <input type="text" name="first-name" id="first-name" onChange={e => SetFirstName(e.target.value)} value={firstName} />
+                        <input type="text" name="first-name" id="first-name" onChange={e => SetFirstName(e.target.value)} value={firstName} required />
                     </div>
                     <br />
                     <div className="form-contact-input">
                         <label htmlFor="last-name">Prénom<span className='dot'>*</span></label>
-                        <input type="text" name="last-name" id="last-name" onChange={e => SetLastName(e.target.value)} value={lastName} />
+                        <input type="text" name="last-name" id="last-name" onChange={e => SetLastName(e.target.value)} value={lastName} required />
                     </div>
                     <br />
                     <div className="form-contact-input">
                         <label htmlFor="email">Email<span className='dot'>*</span></label>
-                        <input type="email" name="email" id="email" onChange={e => SetContactEmail(e.target.value)} value={contactEmail} />
+                        <input type="email" name="email" id="email" onChange={e => SetContactEmail(e.target.value)} value={contactEmail} required />
                     </div>
                     <br />
                     <div className="form-contact-input">
@@ -81,16 +81,16 @@ const Contact = () => {
                     <div className="form-contact-textarea">
                         <label htmlFor="message">Message<span className='dot'>*</span></label>
                         <br />
-                        <textarea name="message" id="message" rows="10" onChange={e => SetContactMessage(e.target.value)} value={contactMessage}></textarea>
+                        <textarea name="message" id="message" rows="10" onChange={e => SetContactMessage(e.target.value)} value={contactMessage} required></textarea>
                     </div>
                     <br />
                     <div className="form-contact-input-newsletter">
                         <label htmlFor="text">Souhaitez-vous être rappelé par téléphone?<span className='dot'>*</span></label>
                         <div className="form-contact-input-newsletter-radio">
-                            <input type="radio" name="rappel" id="rappel-oui" onClick={openInputYes} onChange={e => SetRadio(e.target.value)} value={true}></input>
+                            <input type="radio" name="rappel" id="rappel-oui" onClick={openInputYes} onChange={e => SetRadio(e.target.value)} value={true} required></input>
                             <div className="form-contact-input-newsletter-radio-box">Oui</div>
                             <input type="text" className="phone" style={{ display: isActive ? '' : 'none' }} placeholder="N° de téléphone" onChange={e => SetContactPhone(e.target.value)} value={contactPhone}></input>
-                            <input type="radio" name="rappel" id="rappel-non" onChange={e => SetRadio(e.target.value)} value={false}></input>
+                            <input type="radio" name="rappel" id="rappel-non" onChange={e => SetRadio(e.target.value)} value={false} required></input>
                             <div className="form-contact-input-newsletter-radio-box">Non</div>
                         </div>
                     </div>

@@ -101,6 +101,21 @@
 
 }
 
+.radioModalReview {
+    display: flex;
+    flex-direction: row;
+}
+
+.radioModalReviewInput {
+    height: 20px;
+    width: 30px;
+    background-color: #FFC959;
+}
+
+.radioModalReview label {
+    margin-right: 50px;
+}
+
 .modalReviewTextArea label {
     font-family: 'Inter';
     font-style: normal;

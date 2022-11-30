@@ -189,7 +189,7 @@
 .img-temp img {
     width: 70px;
     height: 70px;
-    border-radius: 6pt;
+    border-radius: 50%;
 }
 
 .dashboard-review-desc-user-name {

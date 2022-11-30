@@ -40,7 +40,7 @@ const Review = () => {
             .then((response) => {
                 // console.log(response.data);
                 setDeleteData(response.data);
-                alert('donnée effacée');
+                alert('Avis utilisateur éffacé avec succés !');
                 window.location.reload();
             });
     };

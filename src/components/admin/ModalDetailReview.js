@@ -12,6 +12,7 @@ const ModalDetailReview = (props) => {
     const close = props.action;
     const usersData = props.userReview;
     let nom, magazin, poste, photo, commentaire, pin;
+
     if (props.userReview) {
         nom = props.userReview.prenom_users_reviews;
         magazin = props.userReview.magasin_enseigne_users_reviews;

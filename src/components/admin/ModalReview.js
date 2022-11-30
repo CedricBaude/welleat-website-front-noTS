@@ -55,17 +55,20 @@ const ModalReview = (props) => {
                             <textarea name="" id="" cols="30" rows="10" onChange={e => SetComment(e.target.value)}></textarea >
                         </div>
                         <div className="modalReviewPicture">
-                            <label htmlFor="">Photo</label>
-                            <input type="text" onChange={e => SetPicture(e.target.value)} />
+                            <label htmlFor="">Photo     </label>
+                            <input type="text" onChange={e => SetPicture(e.target.value)} value="user_picture/avatar-defaut.jpg" />
                             <div className="UserReviewPictureTemp">
                             </div>
                         </div>
                         <div className="modalReviewInput">
-                            <label htmlFor="">Pin</label>
-                            <input type="radio" name="rappel" id="rappel-oui" onChange={e => SetPin(e.target.value)} value={true}></input>
-                            <div className="form-contact-input-newsletter-radio-box">Oui</div>
-                            <input type="radio" name="rappel" id="rappel-non" onChange={e => SetPin(e.target.value)} value={false}></input>
-                            <div className="form-contact-input-newsletter-radio-box">Non</div>
+
+                            <div className='radioModalReview'>
+                                <label htmlFor="">Pin</label>
+                                <input type="radio" name="rappel" className="radioModalReviewInputContent" id="rappel-oui" onChange={e => SetPin(e.target.value)} value={true}></input>
+                                <div className="form-contact-input-newsletter-radio-box">Oui</div>
+                                <input type="radio" name="rappel" className="radioModalReviewInputContent" id="rappel-non" onChange={e => SetPin(e.target.value)} value={false}></input>
+                                <div className="form-contact-input-newsletter-radio-box">Non</div>
+                            </div>
                         </div>
                     </div>
                     <button className='addUserReview'>AJOUTER</button>

@@ -207,17 +207,17 @@
 
 .users-profil {
     height: 300px;
-    width: 250px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 0 30px
 }
 
 .profil-picture {
     height: 130px;
     width: 130px;
-    background-color: #FFC959;
+    background-color: white;
     border-radius: 50%;
     margin-top: 20px;
 }
