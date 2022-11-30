@@ -1,9 +1,13 @@
 import React from 'react';
 import './modalContact.css';
+
 const modalContainerActive = 'modalContainerActive';
 const modalContainer = 'modalContainer';
 
+
+
 const ModalDetailReview = (props) => {
+
     const modalState = props.toggle;
     const close = props.action;
     const usersData = props.userReview;
@@ -46,9 +50,6 @@ const ModalDetailReview = (props) => {
                         <textarea name="" id="" cols="30" rows="10" placeholder={commentaire} className="inputModalContactArea" readOnly></textarea>
                     </div>
                     <div>
-                        {/* <img src={require('../../assets/img/' + photo)} alt="" /> */}
-                        <div>{console.dir(photo)}</div>
-
                     </div>
                 </div>
                 <div className="modalReviewFooter">

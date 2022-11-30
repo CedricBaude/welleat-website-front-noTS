@@ -8,6 +8,7 @@ const baseURLStory = "https://testrender-6iwm.onrender.com/story";
 
 const Story = () => {
     const [story, setStory] = React.useState(null);
+    const [deleteData, setDeleteData] = useState("");
 
     React.useEffect(() => {
         axios.get(baseURLStory).then((response) => {
@@ -22,7 +23,15 @@ const Story = () => {
     };
 
     if (!story) return null;
-
+    function deletedData(data) {
+        axios.delete("https://testrender-6iwm.onrender.com/story/" + data.id)
+            .then((response) => {
+                // console.log(response.data);
+                setDeleteData(response.data);
+                alert('Données effacées avec succés.');
+                window.location.reload();
+            });
+    };
     return (
         <div className='dashboard-content'>
             <Header />
@@ -48,7 +57,7 @@ const Story = () => {
                                     <div className='dashboard-review-desc-store dashboard-story-desc-box'>
                                         <div className='dashboard-review-desc-user-store-name dashboard-story-desc'>{data.description_story}</div>
                                     </div>
-
+                                    <button className='deleteButton' onClick={() => deletedData(data)}></button>
                                 </div>
                             )
                         }

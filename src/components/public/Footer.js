@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-newsletter">
                         <div className="footer-newsletter-desc">
-                            Suivez l’aventure <span className='welleat'>Welleat</span><span className='dot'>.</span> au travers de nos dernieres nouvelles.
+                            Suivez l’aventure <span className='welleat gras'>Welleat</span><span className='dot gras'>.</span> au travers de nos dernieres nouvelles.
                         </div>
 
                         <div className="footer-newsletter-content">
@@ -71,11 +71,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-mentions">
                     <ul>
-                        <li>Welleat - 2022©</li>
-                        <li><Link to="/mentions">Mentions légales</Link></li>
-                        <li><Link to="/privacy">Confidentialité</Link></li>
-                        <li><Link to="/cookies">Cookies</Link></li>
-                        <li><Link to="/legal">Légal</Link></li>
+                        <li className='gras'>Welleat - 2022©</li>
+                        <li className='gras'><Link to="/mentions">Mentions légales</Link></li>
+                        <li className='gras'><Link to="/privacy">Confidentialité</Link></li>
+                        <li className='gras'><Link to="/cookies">Cookies</Link></li>
+                        <li className='gras'><Link to="/legal">Légal</Link></li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
 import './dashboard.css';
-import imgTemp from "../../assets/img/Img-temp.png";
 import stickySelected from "../../assets/img/sticky-selected.png";
 import stickyUnSelected from "../../assets/img/sticky-unselected.png";
 import axios from "axios";
@@ -17,6 +16,7 @@ const Review = () => {
     const [post, setPost] = useState(null);
     const [posts, setPosts] = useState([]);
     const [deleteData, setDeleteData] = useState("");
+
 
     useEffect(() => {
         axios.get(baseURL).then((response) => {
@@ -67,7 +67,7 @@ const Review = () => {
                                 <div className="dashboard-review" key={data.id}>
                                     <div className='dashboard-review-desc-user'>
                                         <div className='img-temp'>
-                                            <img src={imgTemp} alt="" className='' />
+                                            <img src={require('../../assets/img/' + data.photo_users_reviews)} alt="" />
                                         </div>
                                         <div className='dashboard-review-desc-user-name'>{data.prenom_users_reviews}</div>
                                     </div>

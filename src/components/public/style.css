@@ -1,12 +1,15 @@
 /* -------------------- */
 /*GENERAL*/
+.gras {
+    font-weight: 600;
+}
 
 .sub-content {
     padding: 300px 0;
 }
 
 .sub-title {
-    font-size: 74px;
+    font-size: 80px;
     color: #FFC959;
 }
 
@@ -159,7 +162,7 @@
 }
 
 .pourcent {
-    font-size: 90px;
+    font-size: 96px;
     color: #FFC959;
     font-weight: 700;
 }
@@ -439,7 +442,7 @@
 }
 
 .story-content {
-    padding: 0 17%;
+    padding: 0 19%;
     margin-top: 100px;
     margin-bottom: 50px;
 
@@ -599,7 +602,7 @@
 
 .footer-quote {
     margin: 50px 0 50px 0;
-    font-size: 34px;
+    font-size: 38px;
     font-style: italic;
     font-weight: 500;
 }

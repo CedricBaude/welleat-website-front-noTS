@@ -166,6 +166,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 8px 0;
 }
 
 .dashboard-review-desc-user {
@@ -183,6 +184,12 @@
     display: flex;
     align-items: center;
     margin-left: 10px;
+}
+
+.img-temp img {
+    width: 70px;
+    height: 70px;
+    border-radius: 6pt;
 }
 
 .dashboard-review-desc-user-name {
@@ -355,6 +362,11 @@
     text-align: left;
     line-height: 10px;
     width: 100%;
+}
+
+.userReviewPicture {
+    width: 50px;
+    height: 50px;
 }
 
 .dahsboard-contact {
