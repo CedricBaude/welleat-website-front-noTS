@@ -98,6 +98,8 @@
     border-radius: 6pt;
     width: 100%;
     margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
 
 }
 
@@ -114,7 +116,9 @@
     border: 1px solid #0000001F;
     border-radius: 6pt;
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 .modalStoryReviewPicture {}
@@ -147,8 +151,13 @@
     justify-content: flex-end;
 }
 
-.addStoryReview {
-    width: 110px;
+.addStory {
+    display: flex;
+    justify-content: right;
+}
+
+.addStoryButton {
+    width: 120px;
     height: 42px;
     background: #FFC959;
     border-radius: 4px;
@@ -157,5 +166,6 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    margin-right: 20px;
+    margin-right: -4px;
+    cursor: pointer;
 }

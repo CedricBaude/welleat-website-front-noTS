@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import Header from '../../components/admin/Header';
 // import { accountService } from '../../_services/account.service';
@@ -9,28 +9,47 @@ import stickySelected from "../../assets/img/sticky-selected.png";
 import stickyUnSelected from "../../assets/img/sticky-unselected.png";
 import axios from "axios";
 import ModalReview from '../../components/admin/ModalReview';
+import ModalDetailReview from '../../components/admin/ModalDetailReview';
 
 const baseURL = "https://testrender-6iwm.onrender.com/avis";
 
 const Review = () => {
-    const [post, setPost] = React.useState(null);
+    const [post, setPost] = useState(null);
+    const [posts, setPosts] = useState([]);
+    const [deleteData, setDeleteData] = useState("");
 
-    React.useEffect(() => {
+    useEffect(() => {
         axios.get(baseURL).then((response) => {
             // console.log(response.data);
-            setPost(response.data);
+            setPosts(response.data);
         });
     }, []);
 
     const [modalState, setModalState] = useState(false);
+    const [modalState2, setModalState2] = useState(false);
     function openModal() {
         setModalState(!modalState);
+    };
+    function openModal2(data) {
+        setModalState2(!modalState2);
+        setPost(data);
+    };
+
+    function deletedData(data) {
+        axios.delete("https://testrender-6iwm.onrender.com/avis/" + data.id)
+            .then((response) => {
+                // console.log(response.data);
+                setDeleteData(response.data);
+                alert('donnée effacée');
+                window.location.reload();
+            });
     };
 
     return (
         <div className='dashboard-content'>
             <Header />
             <ModalReview toggle={modalState} action={openModal} />
+            <ModalDetailReview toggle={modalState2} action={openModal2} userReview={post} />
             <div className="dashboard-sub-content">
 
                 <div className="dashboard-sub-content-heading">
@@ -43,7 +62,7 @@ const Review = () => {
                         {/* <span className='togglemodal' onClick={openModal}>open modal</span> */}
                     </div>
                     {
-                        post?.data.map(data => {
+                        posts?.data?.map(data => {
                             return (
                                 <div className="dashboard-review" key={data.id}>
                                     <div className='dashboard-review-desc-user'>
@@ -65,9 +84,9 @@ const Review = () => {
 
                                     <div className='dashboard-review-desc-detail'>
                                         <div className='dashboard-review-desc-user-detail-pin'><img src={data.pin_users_reviews ? stickySelected : stickyUnSelected} alt="pin" /></div>
-                                        <button className='dashboard-review-desc-user-detail'>DETAILS</button>
+                                        <button className='dashboard-review-desc-user-detail ' onClick={() => openModal2(data)}>DETAILS</button>
                                     </div>
-
+                                    <button className='deleteButton' onClick={() => deletedData(data)}></button>
                                 </div>
                             )
                         }

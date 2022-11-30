@@ -65,7 +65,7 @@ const ModalContact = (props) => {
                     <div>{rappel}</div>
                 </div>
                 <div className="modalReviewFooter">
-                    <button className='addUserReview'>AJOUTER</button>
+
                 </div>
             </div>
 
