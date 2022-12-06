@@ -56,7 +56,7 @@ const ModalReview = (props) => {
                         </div>
                         <div className="modalReviewPicture">
                             <label htmlFor="">Photo     </label>
-                            <input type="text" onChange={e => SetPicture(e.target.value)} value="user_picture/avatar-defaut.jpg" />
+                            <input type="text" onChange={e => SetPicture(e.target.value)} value="user_picture/avatar-defaut.png" />
                             <div className="UserReviewPictureTemp">
                             </div>
                         </div>
