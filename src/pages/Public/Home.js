@@ -13,43 +13,22 @@ import Stats from '../../components/public/Stats';
 import Contact from '../../components/public/Contact';
 import Footer from '../../components/public/Footer';
 import Story from '../../components/public/Story';
-import Distribution from '../../components/public/Distribution';
-import Consumers from '../../components/public/Consumers';
 
 const Home = () => {
-    // const handleScroll = (e: any) => {
-    //     var a: any = document.getElementById('test');
-    //     a.style.background = 'red';
-    // };
-
-    // const [myCustomStyle, setMyCustomStyle] = useState({});
-
-    // const setBackgroundColor = (color: string) => {
-    //     setMyCustomStyle(state => ({ '--sub-content-background': color }))
-    // }
-
     const [appContentBackGround, setappContentBackGround] = useState(false);
-
     const changeBackGroundBody = () => {
-
         if (window.scrollY >= 1600) {
             setappContentBackGround(true)
         }
-
         else {
             setappContentBackGround(false)
         }
-
     };
     window.addEventListener('scroll', changeBackGroundBody);
-
-
     return (
         <div className={appContentBackGround ? 'app-content active' : 'app-content'}  >
             <Header />
-
             <div className="home-container" id="home" >
-
                 <img src={homeLogo} alt="" className='home-logo' />
                 <h1>Révolutionnons la production culinaire<span className='point'>.</span></h1>
             </div>

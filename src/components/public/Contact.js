@@ -95,7 +95,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <p><span className='dot'>*</span>obligatoire</p>
-                    <div className='submit-button'>
+                    <div className='submit-button simButton'>
                         <button type="submit">Envoyer</button>
                     </div>
 

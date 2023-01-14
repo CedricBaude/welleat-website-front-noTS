@@ -27,9 +27,6 @@ const Dashboard = () => {
 
     if (!post) return null;
 
-    // console.log(post.data[0].nom_manageable_data);
-    // console.log(post.data[0].valeur_manageable_data);
-    // }
     function sendManageableData() {
         const sendableData = { valeur: nombre };
         axios.put('https://testrender-6iwm.onrender.com/data/2', sendableData)

@@ -12,7 +12,7 @@ const ModalReview = (props) => {
     const [store, SetStore] = useState("");
     const [job, SetJob] = useState("");
     const [comment, SetComment] = useState("");
-    const [picture, SetPicture] = useState("");
+    const [picture, SetPicture] = useState("user_picture/avatar-defaut.png");
     const [pin, SetPin] = useState("");
 
     function sendModalReviewData() {
@@ -56,7 +56,7 @@ const ModalReview = (props) => {
                         </div>
                         <div className="modalReviewPicture">
                             <label htmlFor="">Photo     </label>
-                            <input type="text" onChange={e => SetPicture(e.target.value)} value="user_picture/avatar-defaut.png" />
+                            <input type="text" onChange={e => SetPicture(e.target.value)} />
                             <div className="UserReviewPictureTemp">
                             </div>
                         </div>
