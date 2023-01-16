@@ -5,7 +5,7 @@ import './style.css';
 const AppliActeur = () => {
     return (
         <div>
-            <h2>Hello, appli acteur</h2>
+            <h2>Hello, Appli acteur</h2>
         </div>
     );
 };
