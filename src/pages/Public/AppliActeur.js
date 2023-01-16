@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './style.css';
+
 const AppliActeur = () => {
     return (
         <div>
-            Hello, appli acteur
+            <h2>Hello, appli acteur</h2>
         </div>
     );
 };
