@@ -57,3 +57,42 @@ h3 {
 .mentions-content {
     padding: 100px 0 100px 0;
 }
+
+/* -------------------- */
+/*APPLI CONSO*/
+.header-appli {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-appli-acteur {
+    background-color: #FFC959;
+    height: 161px;
+    width: 161px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefLogo {
+    height: 100px;
+    width: 100px;
+}
+
+.appli-acteur-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    /* line-height: 103px; */
+    text-align: center;
+    color: #FFC959;
+
+}
+
+/* -------------------- */
+/*APPLI ACTEUR*/
