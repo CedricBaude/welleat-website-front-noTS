@@ -23,7 +23,7 @@ const AppliActeur = () => {
 
             </section >
 
-            <section className='content'>
+            <section className='appli-acteur-content'>
                 <div className="logo-appli-acteur-carrousel">
 
                 </div>
