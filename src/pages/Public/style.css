@@ -59,12 +59,57 @@ h3 {
 }
 
 /* -------------------- */
-/*APPLI CONSO*/
-.header-appli {
+/*APPLI ACTEUR*/
+.appli-acteur {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+
+
+.header-appli-acteur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-appli-acteur h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    /* line-height: 103px; */
+    text-align: center;
+    color: #FFC959;
+}
+
+.header-appli-acteur h3 {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header-appli-acteur h4 {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .logo-appli-acteur {
@@ -76,6 +121,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 .chefLogo {
@@ -83,16 +129,16 @@ h3 {
     width: 100px;
 }
 
-.appli-acteur-title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    /* line-height: 103px; */
-    text-align: center;
-    color: #FFC959;
+.appli-acteur-title {}
 
+
+.logo-appli-acteur-carrousel {
+    height: 100px;
+    width: 100%;
+    background-color: black;
 }
 
+
+
 /* -------------------- */
-/*APPLI ACTEUR*/
+/*APPLI CONSO*/
