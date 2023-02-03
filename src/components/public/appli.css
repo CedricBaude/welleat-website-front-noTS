@@ -2,6 +2,7 @@
     padding: 290px 0;
     color: white;
     display: flex;
+    scroll-snap-align: start;
 
 }
 

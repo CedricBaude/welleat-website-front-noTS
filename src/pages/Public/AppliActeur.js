@@ -32,6 +32,9 @@ const AppliActeur = () => {
             <section>
                 <div>
                     <h2 className='appli-acteur-title'>Ensemble promouvons la <br /> production culinaire</h2>
+                    <div>
+
+                    </div>
                 </div>
                 <div>
                     <h3>Produisons des produits sains pour vos clients et la planéte </h3>

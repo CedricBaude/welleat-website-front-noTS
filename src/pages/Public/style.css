@@ -6,7 +6,8 @@
 
     background: var(--sub-content-background);
     background-attachment: fixed;
-    overflow: 'scroll';
+    overflow-y: 'scroll';
+    scroll-snap-type: y mandatory;
 }
 
 .app-content.active {
@@ -14,7 +15,8 @@
 
     background: var(--sub-content-background);
     background-attachment: fixed;
-    overflow: 'scroll';
+    overflow-y: 'scroll';
+    scroll-snap-type: y mandatory;
 }
 
 /* -------------------- */

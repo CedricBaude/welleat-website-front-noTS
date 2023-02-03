@@ -11,7 +11,8 @@ import Cookies from './pages/Public/Cookies';
 import Legal from './pages/Public/Legal';
 import AppliActeur from './pages/Public/AppliActeur';
 import AppliConso from './pages/Public/AppliConso';
-
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 
 function App() {
