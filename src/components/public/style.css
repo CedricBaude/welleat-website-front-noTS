@@ -201,6 +201,10 @@
     border-radius: 10pt;
 }
 
+.users-logo-container {
+    padding: 0 15%;
+}
+
 .users-testi {
     display: flex;
     justify-content: space-around;
