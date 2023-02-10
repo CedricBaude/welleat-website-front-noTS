@@ -35,6 +35,7 @@ const Use = () => {
     // const product2 = postLogo?.data.map((data) => <Product2 id_prod={data?.id} url={data?.lien} />);
     const carouselLogo = (postLogo?.data || []).map((data) => <CarouselLogo id_logo={data?.id} url={data?.lien} />);
 
+
     return (
         <section className='sub-content use' id='returns'>
             <h3 className='sub-title-2'>Ils utilisent Welleat<span className='dot'>.</span> </h3>
@@ -60,6 +61,9 @@ const Use = () => {
             </div>
 
             {/* {product2} */}
+            <div className="users-testi-container">
+
+            </div>
             <div className="users-testi">
 
                 {
