@@ -205,6 +205,10 @@
     padding: 0 15%;
 }
 
+.users-testi-container {
+    padding: 0 20%;
+}
+
 .users-testi {
     display: flex;
     justify-content: space-around;
@@ -214,7 +218,7 @@
 }
 
 .users-profil {
-    height: 300px;
+    /* height: 300px; */
     width: 260px;
     display: flex;
     flex-direction: column;
