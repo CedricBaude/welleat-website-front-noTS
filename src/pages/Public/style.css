@@ -128,16 +128,38 @@ h3 {
     margin-top: 150px;
 }
 
+.logo-appli-acteur-carrousel-content {
+    padding: 0 20%;
+}
+
 .chefLogo {
     height: 100px;
     width: 100px;
 }
 
-.appli-acteur-title {}
+.appli-acteur-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #FFC959;
+    margin-top: 80px;
+}
+
+.appli-acteur-subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    color: #271a00;
+    margin-top: 80px;
+}
 
 
 .logo-appli-acteur-carrousel {
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-color: black;
 }

@@ -218,11 +218,24 @@
 }
 
 .users-testi-container .react-multiple-carousel__arrow--left {
-    left: 0;
+    left: -10px;
 }
 
 .users-testi-container .react-multiple-carousel__arrow--right {
-    right: 0;
+    right: -10px;
+}
+
+.users-testi-container .react-multiple-carousel__arrow {
+    background: rgb(0 0 0 / 0%);
+}
+
+.users-testi-container .react-multiple-carousel__arrow:hover {
+    background: rgb(0 0 0 / 0%);
+}
+
+.users-testi-container .react-multiple-carousel__arrow::before {
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .users-profil {
